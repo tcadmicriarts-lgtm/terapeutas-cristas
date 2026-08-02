@@ -32,13 +32,13 @@ export default function Header() {
     >
       <div className="container">
         <nav className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo - TC real do banner */}
+          {/* Logo oficial + texto */}
           <a href="#inicio" className="flex items-center gap-3 group">
-            <div className="rounded-xl overflow-hidden shadow-lg transition-transform group-hover:scale-105 w-12 h-12 md:w-14 md:h-14 flex items-center justify-center" style={{ background: "#3d0070" }}>
+            <div className="rounded-xl overflow-hidden shadow-lg transition-transform group-hover:scale-105 w-12 h-12 md:w-14 md:h-14 flex items-center justify-center flex-shrink-0">
               <img
-                src="/manus-storage/tc-logo-wide_b9215e6d.png"
-                alt="Logo TC - Terapeutas Cristãs"
-                className="w-full h-full object-contain p-1"
+                src="/manus-storage/logo-tc-oficial_ab31c903.png"
+                alt="Logo Instituto TC - Terapeutas Cristãs"
+                className="w-full h-full object-contain"
               />
             </div>
             <div className="hidden sm:block">
@@ -46,11 +46,12 @@ export default function Header() {
                 className={`font-display text-lg md:text-xl font-semibold leading-none transition-colors ${
                   scrolled ? "text-foreground" : "text-white"
                 }`}
+                style={{ letterSpacing: "0.02em" }}
               >
-                Terapeutas Cristãs
+                Formação Terapeutas Cristãs
               </p>
-              <p className={`text-xs mt-0.5 ${scrolled ? "text-muted-foreground" : "text-white/70"}`}>
-                Formação com Fé e Certificação
+              <p className={`text-xs mt-1 ${scrolled ? "text-muted-foreground" : "text-white/70"}`}>
+                Instituto TC · Adeilda & Débora
               </p>
             </div>
           </a>
