@@ -1,85 +1,116 @@
-import { Award, BookOpen, Heart, ArrowRight } from "lucide-react";
+import { ArrowRight, Star } from "lucide-react";
 
 const WHATSAPP_URL = "https://wa.me/5511989943662";
 
 export default function Hero() {
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center overflow-hidden pt-20">
-      {/* Background */}
-      <div className="absolute inset-0 z-0">
-        <img
-          src="/manus-storage/hero-bg_2e11e4fc.png"
-          alt=""
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-br from-white/80 via-white/60 to-white/40" />
-        <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-white/30" />
-      </div>
+    <section
+      id="inicio"
+      className="relative min-h-screen flex flex-col overflow-hidden pt-20"
+      style={{ background: "linear-gradient(135deg, #3d0070 0%, #6b1fa8 40%, #8b2fbe 60%, #a040d0 100%)" }}
+    >
+      {/* Decorative circles */}
+      <div
+        className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full pointer-events-none"
+        style={{
+          background: "radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 70%)",
+          transform: "translate(30%, -30%)",
+        }}
+      />
+      <div
+        className="absolute bottom-0 left-0 w-80 h-80 rounded-full pointer-events-none"
+        style={{
+          background: "radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%)",
+          transform: "translate(-30%, 30%)",
+        }}
+      />
 
-      {/* Content */}
-      <div className="container relative z-10 py-20">
-        <div className="max-w-3xl">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card mb-6 animate-in fade-in slide-in-from-bottom duration-500">
-            <Award className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium text-foreground/80">Certificado reconhecido pelo MEC</span>
+      {/* Main content */}
+      <div className="container relative z-10 flex-1 flex flex-col justify-center py-16 md:py-24">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          {/* Left - Text */}
+          <div className="text-white space-y-6">
+            {/* Badge */}
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/30">
+              <Star className="w-4 h-4 text-yellow-300 fill-yellow-300" />
+              <span className="text-sm font-semibold text-white">Pós-Graduação & Extensão Universitária</span>
+            </div>
+
+            {/* Heading */}
+            <div>
+              <p className="text-white/80 text-lg mb-2 font-medium tracking-wide uppercase text-sm">
+                Formação Especialista
+              </p>
+              <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-bold leading-tight">
+                Terapeutas<br />
+                <span style={{ color: "#D4AF37" }}>Cristãs</span>
+              </h1>
+            </div>
+
+            <p className="text-white/80 text-lg leading-relaxed max-w-xl">
+              Construa sua carreira sem abrir mão da sua fé. Capacite-se para transformar vidas
+              e ser reconhecida com certificação oficial pelo MEC.
+            </p>
+
+            {/* Stats */}
+            <div className="grid grid-cols-3 gap-4 py-5 border-y border-white/20">
+              <div className="text-center">
+                <p className="font-display text-3xl font-bold text-white">+50</p>
+                <p className="text-xs text-white/70 mt-1">Alunas formadas</p>
+              </div>
+              <div className="text-center border-x border-white/20">
+                <p className="font-display text-3xl font-bold text-white">100%</p>
+                <p className="text-xs text-white/70 mt-1">Online</p>
+              </div>
+              <div className="text-center">
+                <p className="font-display text-3xl font-bold" style={{ color: "#D4AF37" }}>MEC</p>
+                <p className="text-xs text-white/70 mt-1">Certificado</p>
+              </div>
+            </div>
+
+            {/* CTAs */}
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a
+                href="#formacoes"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold shadow-xl hover:shadow-2xl transition-all hover:scale-105 active:scale-95 text-purple-900"
+                style={{ background: "linear-gradient(135deg, #D4AF37, #F0D060)" }}
+              >
+                Ver Formações
+                <ArrowRight className="w-5 h-5" />
+              </a>
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white/20 backdrop-blur-sm text-white font-semibold border border-white/40 hover:bg-white/30 transition-all hover:scale-105 active:scale-95"
+              >
+                Falar no WhatsApp
+              </a>
+            </div>
           </div>
 
-          {/* Heading */}
-          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold leading-tight text-foreground mb-6 animate-in fade-in slide-in-from-bottom duration-700 delay-100">
-            Construa sua carreira{" "}
-            <span className="text-gradient-brand italic">sem abrir mão</span>{" "}
-            da sua fé
-          </h1>
-
-          {/* Subtitle */}
-          <p className="text-lg md:text-xl text-foreground/70 mb-8 max-w-2xl leading-relaxed animate-in fade-in slide-in-from-bottom duration-700 delay-200">
-            Capacite-se para transformar vidas e ser reconhecida. Nossas formações preparam
-            mulheres cristãs para ingressar no mercado de trabalho com reconhecimento,
-            certificação e autoridade espiritual.
-          </p>
-
-          {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-4 animate-in fade-in slide-in-from-bottom duration-700 delay-300">
-            <a
-              href="#formacoes"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full gradient-brand text-white font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105 active:scale-95"
-            >
-              Conheça Nossas Formações
-              <ArrowRight className="w-5 h-5" />
-            </a>
-            <a
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white text-foreground font-semibold border border-border shadow-md hover:shadow-lg transition-all hover:scale-105 active:scale-95"
-            >
-              Quero ser uma Terapeuta
-            </a>
-          </div>
-
-          {/* Stats */}
-          <div className="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-border/50 max-w-lg animate-in fade-in slide-in-from-bottom duration-700 delay-500">
-            <div>
-              <p className="font-display text-3xl md:text-4xl font-bold text-gradient-brand">+50</p>
-              <p className="text-sm text-muted-foreground mt-1">Mulheres transformadas</p>
-            </div>
-            <div>
-              <p className="font-display text-3xl md:text-4xl font-bold text-gradient-brand">100%</p>
-              <p className="text-sm text-muted-foreground mt-1">Online e flexível</p>
-            </div>
-            <div>
-              <p className="font-display text-3xl md:text-4xl font-bold text-gradient-brand">MEC</p>
-              <p className="text-sm text-muted-foreground mt-1">Certificação oficial</p>
+          {/* Right - Real image */}
+          <div className="relative flex justify-center lg:justify-end">
+            <div className="relative w-full max-w-lg">
+              <div className="rounded-2xl overflow-hidden shadow-2xl border-2 border-white/20">
+                <img
+                  src="/manus-storage/tc-banner_f88515fb.png"
+                  alt="Formação Especialista Terapeutas Cristãs"
+                  className="w-full h-auto"
+                />
+              </div>
+              {/* Floating badge */}
+              <div className="absolute -bottom-4 -left-4 bg-white rounded-xl shadow-xl p-4 max-w-[200px]">
+                <div className="flex items-center gap-1 mb-1">
+                  {[1, 2, 3, 4, 5].map((i) => (
+                    <Star key={i} className="w-3 h-3 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+                <p className="text-xs font-semibold text-gray-800">Certificação reconhecida</p>
+                <p className="text-xs text-gray-500">em todo o Brasil</p>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-bounce">
-        <div className="w-6 h-10 rounded-full border-2 border-foreground/30 flex items-start justify-center p-1.5">
-          <div className="w-1 h-2 rounded-full bg-foreground/40" />
         </div>
       </div>
     </section>

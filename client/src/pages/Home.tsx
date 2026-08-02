@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import PainPoints from "@/components/PainPoints";
 import Formacoes from "@/components/Formacoes";
+import CursosLivres from "@/components/CursosLivres";
 import Livros from "@/components/Livros";
 import Metodo from "@/components/Metodo";
 import Sobre from "@/components/Sobre";
@@ -17,6 +18,7 @@ export default function Home() {
         <Hero />
         <PainPoints />
         <Formacoes />
+        <CursosLivres />
         <Livros />
         <Metodo />
         <Sobre />

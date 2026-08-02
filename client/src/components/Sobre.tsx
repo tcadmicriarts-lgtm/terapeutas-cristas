@@ -25,20 +25,29 @@ const valores = [
 
 export default function Sobre() {
   return (
-    <section id="sobre" className="py-20 md:py-28 bg-gradient-brand-soft">
+    <section id="sobre" className="py-20 md:py-28 bg-white">
       <div className="container">
+        {/* Turma formada - full width hero image */}
+        <div className="rounded-2xl overflow-hidden shadow-2xl mb-16">
+          <img
+            src="/manus-storage/turma-formada_a6a044a2.png"
+            alt="Turma formada - Seja você a próxima Terapeuta Cristã"
+            className="w-full h-auto"
+          />
+        </div>
+
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left - Image */}
           <div className="relative">
-            <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
+            <div className="rounded-3xl overflow-hidden shadow-2xl">
               <img
-                src="/manus-storage/formacao-card_76da877f.png"
-                alt="Formação de Terapeutas Cristãs"
-                className="w-full h-full object-cover"
+                src="/manus-storage/mulher-oracao_ae20d06f.png"
+                alt="Mulher cristã em oração"
+                className="w-full h-auto"
               />
             </div>
             {/* Floating quote */}
-            <div className="absolute -bottom-8 -left-4 md:left-8 max-w-sm bg-white rounded-2xl shadow-xl p-6">
+            <div className="absolute -bottom-8 -right-4 md:right-4 max-w-xs bg-white rounded-2xl shadow-xl p-6 border border-purple-100">
               <p className="font-display italic text-lg text-foreground/80 leading-relaxed">
                 "Você pode viver do que ama, cumprir seu propósito e ainda impactar
                 vidas com excelência."
@@ -48,7 +57,9 @@ export default function Sobre() {
 
           {/* Right - Content */}
           <div className="space-y-6">
-            <p className="font-display italic text-lg text-primary">Nossa Missão</p>
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-100">
+              <span className="text-sm font-semibold text-purple-700">Nossa Missão</span>
+            </div>
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground leading-tight">
               Uma plataforma que une{" "}
               <span className="text-gradient-brand">fé, técnica e reconhecimento</span>{" "}
@@ -57,8 +68,7 @@ export default function Sobre() {
             <p className="text-foreground/60 text-lg leading-relaxed">
               Nascemos do desejo de ver mulheres cristãs ocupando seus lugares no mercado de
               trabalho com dignidade, competência e autoridade espiritual. Acreditamos que é
-              possível servir a Deus através do profissionalismo, e que a certificação é uma
-              ponte entre o chamado e a realização.
+              possível servir a Deus através do profissionalismo.
             </p>
             <p className="text-foreground/60 text-lg leading-relaxed">
               Nossas formações preparam mulheres cristãs para ingressar no mercado de trabalho
@@ -71,10 +81,11 @@ export default function Sobre() {
               {valores.map((valor, i) => (
                 <div
                   key={i}
-                  className="bg-white/70 backdrop-blur-sm rounded-xl p-5 border border-border/30 hover:bg-white hover:shadow-md transition-all duration-300"
+                  className="rounded-xl p-5 border border-purple-100 hover:shadow-md transition-all duration-300 hover:border-purple-300"
+                  style={{ background: "linear-gradient(135deg, #faf5ff, #fdf4ff)" }}
                 >
-                  <div className="w-10 h-10 rounded-xl gradient-brand-soft flex items-center justify-center mb-3">
-                    <valor.icon className="w-5 h-5 text-primary" />
+                  <div className="w-10 h-10 rounded-xl bg-purple-100 flex items-center justify-center mb-3">
+                    <valor.icon className="w-5 h-5 text-purple-700" />
                   </div>
                   <h4 className="font-display text-base font-semibold text-foreground mb-1">
                     {valor.title}
