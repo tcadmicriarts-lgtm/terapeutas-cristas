@@ -1,4 +1,4 @@
-import { ArrowRight, Star } from "lucide-react";
+import { ArrowRight, Star, ShieldCheck } from "lucide-react";
 
 const WHATSAPP_URL = "https://wa.me/5511989943662";
 
@@ -32,8 +32,8 @@ export default function Hero() {
           <div className="text-white space-y-6">
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/30">
-              <Star className="w-4 h-4 text-yellow-300 fill-yellow-300" />
-              <span className="text-sm font-semibold text-white">Pós-Graduação & Extensão Universitária</span>
+              <ShieldCheck className="w-4 h-4 text-yellow-300" />
+              <span className="text-sm font-semibold text-white">Certificação de Capacitação Profissional Validada</span>
             </div>
 
             {/* Heading */}
@@ -49,22 +49,18 @@ export default function Hero() {
 
             <p className="text-white/80 text-lg leading-relaxed max-w-xl">
               Construa sua carreira sem abrir mão da sua fé. Capacite-se para transformar vidas
-              e ser reconhecida com certificação oficial pelo MEC.
+              e ser reconhecida com certificação de capacitação profissional validada.
             </p>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-4 py-5 border-y border-white/20">
+            <div className="grid grid-cols-2 gap-4 py-5 border-y border-white/20">
               <div className="text-center">
-                <p className="font-display text-3xl font-bold text-white">+50</p>
-                <p className="text-xs text-white/70 mt-1">Alunas formadas</p>
-              </div>
-              <div className="text-center border-x border-white/20">
                 <p className="font-display text-3xl font-bold text-white">100%</p>
                 <p className="text-xs text-white/70 mt-1">Online</p>
               </div>
-              <div className="text-center">
-                <p className="font-display text-3xl font-bold" style={{ color: "#D4AF37" }}>MEC</p>
-                <p className="text-xs text-white/70 mt-1">Certificado</p>
+              <div className="text-center border-l border-white/20">
+                <p className="font-display text-3xl font-bold" style={{ color: "#D4AF37" }}>Validada</p>
+                <p className="text-xs text-white/70 mt-1">Certificação Profissional</p>
               </div>
             </div>
 
@@ -89,13 +85,13 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right - Real image */}
+          {/* Right - Real image da turma formada em destaque */}
           <div className="relative flex justify-center lg:justify-end">
             <div className="relative w-full max-w-lg">
               <div className="rounded-2xl overflow-hidden shadow-2xl border-2 border-white/20">
                 <img
-                  src="/manus-storage/tc-banner_f88515fb.png"
-                  alt="Formação Especialista Terapeutas Cristãs"
+                  src="/manus-storage/turma-formada_a6a044a2.png"
+                  alt="Turma formada — Seja você a próxima Terapeuta Cristã"
                   className="w-full h-auto"
                 />
               </div>

@@ -7,12 +7,12 @@ const formacoes = [
     id: "formacao-tc",
     image: "/manus-storage/formacao-tc_7cc0709d.png",
     title: "Formação Terapeuta Cristã",
-    subtitle: "Com certificação do MEC — Válida em todo Brasil",
+    subtitle: "Com Certificação de Capacitação Profissional Validada",
     description: "Capacite-se para restaurar vidas com base na Palavra de Deus.",
     originalPrice: "R$ 4.499",
     price: "R$ 3.960",
     installments: "12x R$ 330",
-    badge: "Certificado MEC",
+    badge: "Certificação Validada",
     featured: true,
     highlights: [
       "Certificado de extensão universitária",
@@ -30,7 +30,7 @@ const formacoes = [
     originalPrice: "R$ 790,00",
     price: "R$ 417,00",
     installments: "mensal",
-    badge: "Pós-MEC",
+    badge: "Pós-Graduação",
     featured: false,
     highlights: [
       "Ministro de Cura",
@@ -72,7 +72,7 @@ export default function Formacoes() {
             <span className="text-sm font-semibold text-purple-700">Conheça Nossas Formações</span>
           </div>
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground leading-tight">
-            Formações com certificação do MEC —{" "}
+            Formações com Certificação de Capacitação Profissional —{" "}
             <span className="text-gradient-brand">válidas em todo o Brasil</span>
           </h2>
           <p className="text-foreground/60 mt-4 text-lg">
@@ -85,7 +85,7 @@ export default function Formacoes() {
           {[
             { icon: Globe, label: "100% Online" },
             { icon: Clock, label: "Aulas ao Vivo e Gravadas" },
-            { icon: Award, label: "Certificação MEC" },
+            { icon: Award, label: "Certificação Validada" },
           ].map((f, i) => (
             <div key={i} className="flex items-center gap-2 text-foreground/60">
               <f.icon className="w-5 h-5 text-purple-600" />

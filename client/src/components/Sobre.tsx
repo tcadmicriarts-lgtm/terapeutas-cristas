@@ -9,7 +9,7 @@ const valores = [
   {
     icon: Shield,
     title: "Certificação",
-    description: "Reconhecimento oficial e credibilidade acadêmica para atuar com segurança profissional.",
+    description: "Certificação de capacitação profissional validada para atuar com segurança e credibilidade.",
   },
   {
     icon: Users,
@@ -27,7 +27,7 @@ export default function Sobre() {
   return (
     <section id="sobre" className="py-20 md:py-28 bg-white">
       <div className="container">
-        {/* Turma formada - full width hero image */}
+        {/* Turma formada - full width real image */}
         <div className="rounded-2xl overflow-hidden shadow-2xl mb-16">
           <img
             src="/manus-storage/turma-formada_a6a044a2.png"
@@ -37,20 +37,20 @@ export default function Sobre() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Left - Image */}
+          {/* Left - Visual quote card (no AI image) */}
           <div className="relative">
-            <div className="rounded-3xl overflow-hidden shadow-2xl">
-              <img
-                src="/manus-storage/mulher-oracao_ae20d06f.png"
-                alt="Mulher cristã em oração"
-                className="w-full h-auto"
-              />
-            </div>
-            {/* Floating quote */}
-            <div className="absolute -bottom-8 -right-4 md:right-4 max-w-xs bg-white rounded-2xl shadow-xl p-6 border border-purple-100">
-              <p className="font-display italic text-lg text-foreground/80 leading-relaxed">
+            <div
+              className="rounded-3xl p-8 md:p-12 shadow-xl h-full flex flex-col justify-center"
+              style={{ background: "linear-gradient(135deg, #3d0070 0%, #6b1fa8 100%)" }}
+            >
+              <HeartHandshake className="w-12 h-12 mb-6" style={{ color: "#D4AF37" }} />
+              <blockquote className="font-display text-xl md:text-2xl text-white leading-relaxed italic mb-6">
                 "Você pode viver do que ama, cumprir seu propósito e ainda impactar
                 vidas com excelência."
+              </blockquote>
+              <p className="text-white/70 leading-relaxed">
+                Nascemos do desejo de ver mulheres cristãs ocupando seus lugares no mercado de
+                trabalho com dignidade, competência e autoridade espiritual.
               </p>
             </div>
           </div>

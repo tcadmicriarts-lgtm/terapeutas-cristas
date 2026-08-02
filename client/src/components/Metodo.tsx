@@ -40,11 +40,14 @@ export default function Metodo() {
           </h2>
         </div>
 
-        {/* Image + Content */}
+        {/* Content */}
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-          {/* Content */}
-          <div className="order-2 lg:order-1 space-y-6">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full gradient-brand-soft">
+          {/* Left - Content */}
+          <div className="space-y-6">
+            <div
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full"
+              style={{ background: "linear-gradient(135deg, #faf5ff, #f3e8ff)" }}
+            >
               <Scale className="w-4 h-4 text-primary" />
               <span className="text-sm font-medium text-primary">Nutrição + Terapia Cristã</span>
             </div>
@@ -56,7 +59,10 @@ export default function Metodo() {
             <ul className="space-y-4">
               {publicoAlvo.map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full gradient-brand flex-shrink-0 flex items-center justify-center mt-0.5">
+                  <div
+                    className="w-6 h-6 rounded-full flex-shrink-0 flex items-center justify-center mt-0.5"
+                    style={{ background: "linear-gradient(135deg, #6b1fa8, #9b3fd4)" }}
+                  >
                     <span className="text-white text-xs font-bold">{i + 1}</span>
                   </div>
                   <span className="text-foreground/70 leading-relaxed">{item}</span>
@@ -68,20 +74,27 @@ export default function Metodo() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-full gradient-brand text-white font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105 active:scale-95"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-full text-white font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105 active:scale-95"
+              style={{ background: "linear-gradient(135deg, #6b1fa8, #9b3fd4)" }}
             >
               Quero conhecer o método
             </a>
           </div>
 
-          {/* Image */}
-          <div className="order-1 lg:order-2 relative">
-            <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl">
-              <img
-                src="/manus-storage/metodo-card_5a361598.png"
-                alt="Método integrado de nutrição e terapia cristã"
-                className="w-full h-full object-cover"
-              />
+          {/* Right - Visual card with quote, no AI image */}
+          <div className="relative">
+            <div
+              className="rounded-3xl p-8 md:p-12 shadow-xl h-full flex flex-col justify-center"
+              style={{ background: "linear-gradient(135deg, #3d0070 0%, #6b1fa8 100%)" }}
+            >
+              <Scale className="w-12 h-12 mb-6" style={{ color: "#D4AF37" }} />
+              <blockquote className="font-display text-xl md:text-2xl text-white leading-relaxed italic mb-6">
+                "Seu corpo é o templo do Espírito Santo. Cuidar dele é um ato de adoração."
+              </blockquote>
+              <p className="text-white/70 leading-relaxed">
+                Nosso método integra nutrição, terapia e fé cristã para tratar a raiz —
+                não apenas os sintomas. Porque verdadeira saúde nasce de dentro para fora.
+              </p>
             </div>
           </div>
         </div>
@@ -91,10 +104,13 @@ export default function Metodo() {
           {pilares.map((pilar, i) => (
             <div
               key={i}
-              className="group bg-gradient-brand-soft rounded-2xl p-8 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+              className="group rounded-2xl p-8 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+              style={{ background: "linear-gradient(135deg, #faf5ff, #f3e8ff)" }}
             >
-              <div className="w-14 h-14 rounded-2xl bg-white flex items-center justify-center mb-5 shadow-sm group-hover:gradient-brand transition-all">
-                <pilar.icon className="w-7 h-7 text-primary group-hover:text-white transition-colors" />
+              <div
+                className="w-14 h-14 rounded-2xl bg-white flex items-center justify-center mb-5 shadow-sm transition-all"
+              >
+                <pilar.icon className="w-7 h-7 text-primary" />
               </div>
               <h4 className="font-display text-xl font-semibold text-foreground mb-3">
                 {pilar.title}

@@ -32,18 +32,14 @@ export default function Header() {
     >
       <div className="container">
         <nav className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo */}
+          {/* Logo - TC real do banner */}
           <a href="#inicio" className="flex items-center gap-3 group">
-            <div
-              className="relative w-10 h-10 md:w-12 md:h-12 rounded-xl flex items-center justify-center shadow-lg transition-transform group-hover:scale-105"
-              style={{ background: "linear-gradient(135deg, #6b1fa8, #9b3fd4)" }}
-            >
-              <span
-                className="font-display font-bold text-lg md:text-xl"
-                style={{ color: "#D4AF37" }}
-              >
-                TC
-              </span>
+            <div className="rounded-xl overflow-hidden shadow-lg transition-transform group-hover:scale-105 w-12 h-12 md:w-14 md:h-14 flex items-center justify-center" style={{ background: "#3d0070" }}>
+              <img
+                src="/manus-storage/tc-logo-wide_b9215e6d.png"
+                alt="Logo TC - Terapeutas Cristãs"
+                className="w-full h-full object-contain p-1"
+              />
             </div>
             <div className="hidden sm:block">
               <p
