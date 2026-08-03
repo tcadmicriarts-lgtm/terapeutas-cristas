@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Menu, X, MessageCircle } from "lucide-react";
+import { Menu, X, GraduationCap, MessageCircle } from "lucide-react";
 
 const WHATSAPP_URL = "https://wa.me/5511989943662";
 
@@ -81,11 +81,27 @@ export default function Header() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-white text-sm font-semibold shadow-md hover:shadow-lg transition-all hover:scale-105 active:scale-95"
-              style={{ background: "linear-gradient(135deg, #6b1fa8, #9b3fd4)" }}
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-colors"
+              style={{
+                color: scrolled ? "#9b3fd4" : "rgba(255,255,255,0.85)",
+                background: scrolled ? "transparent" : "rgba(255,255,255,0.08)",
+                border: scrolled ? "1px solid rgba(155,63,212,0.3)" : "1px solid rgba(255,255,255,0.2)",
+              }}
             >
               <MessageCircle className="w-4 h-4" />
               Fale Conosco
+            </a>
+            <a
+              href="#formacoes"
+              className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full text-sm font-bold shadow-lg hover:shadow-xl transition-all hover:scale-105 active:scale-95"
+              style={{
+                background: "linear-gradient(135deg, #D4AF37, #F0D060)",
+                color: "#3d0070",
+                border: "1px solid rgba(212,175,55,0.5)",
+              }}
+            >
+              <GraduationCap className="w-4 h-4" />
+              Inscreva-se Agora
             </a>
           </div>
 
@@ -116,16 +132,29 @@ export default function Header() {
                 {link.label}
               </a>
             ))}
-            <a
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 mt-4 px-5 py-3 rounded-full text-white font-semibold shadow-md"
-              style={{ background: "linear-gradient(135deg, #6b1fa8, #9b3fd4)" }}
-            >
-              <MessageCircle className="w-4 h-4" />
-              Fale Conosco
-            </a>
+            <div className="flex flex-col gap-3 mt-4">
+              <a
+                href="#formacoes"
+                className="flex items-center justify-center gap-2 px-5 py-3 rounded-full font-bold shadow-md"
+                style={{
+                  background: "linear-gradient(135deg, #D4AF37, #F0D060)",
+                  color: "#3d0070",
+                }}
+              >
+                <GraduationCap className="w-4 h-4" />
+                Inscreva-se Agora
+              </a>
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 px-5 py-3 rounded-full text-white font-semibold shadow-md"
+                style={{ background: "linear-gradient(135deg, #6b1fa8, #9b3fd4)" }}
+              >
+                <MessageCircle className="w-4 h-4" />
+                Fale Conosco
+              </a>
+            </div>
           </div>
         </div>
       )}
