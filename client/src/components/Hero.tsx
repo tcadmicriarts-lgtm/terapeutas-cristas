@@ -90,7 +90,7 @@ export default function Hero() {
             <div className="relative w-full max-w-lg">
               <div className="rounded-2xl overflow-hidden shadow-2xl border-2 border-white/20">
                 <img
-                  src="/manus-storage/turma-formada_a6a044a2.png"
+                  src="/images/turma-formada.png"
                   alt="Turma formada — Seja você a próxima Terapeuta Cristã"
                   className="w-full h-auto"
                 />

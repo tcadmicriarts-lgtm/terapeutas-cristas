@@ -29,7 +29,7 @@ export default function CursosLivres() {
 
         <div className="mb-8 overflow-hidden rounded-2xl border border-purple-100 bg-white shadow-xl">
           <img
-            src="/manus-storage/cursos-livres_f151c566.png"
+            src="/images/cursos-livres.png"
             alt="Cursos Livres: Terapeuta Nutricional, Marketing Digital, Palestrante de Sucesso e Aperfeiçoamento"
             className="h-auto w-full"
           />
@@ -37,7 +37,7 @@ export default function CursosLivres() {
 
         <div className="mb-8 overflow-hidden rounded-2xl border border-purple-100 bg-white shadow-xl">
           <img
-            src="/manus-storage/cursos-modulos_3cc32654.png"
+            src="/images/cursos-modulos.png"
             alt="Cursos livres por módulos: Ministro de Cura, Batalha Espiritual, Cura Interior, Fundamentos da Fé, Libertação e Apocalipse"
             className="h-auto w-full"
           />

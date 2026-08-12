@@ -24,3 +24,9 @@
 - [x] Verificar o conflito entre o Vite e suas dependências.
 - [x] Adicionar uma configuração de instalação compatível com o Vercel.
 - [x] Validar a instalação limpa, compilar e enviar a correção ao GitHub.
+
+# Correção de imagens e links no Vercel
+
+- [x] Identificar imagens e links que dependem do ambiente Manus.
+- [x] Incluir as imagens reais no diretório público do frontend e ajustar as referências.
+- [x] Validar o build estático e enviar a correção ao GitHub.

@@ -66,7 +66,7 @@ export default function Formacoes() {
         {/* Formação principal */}
         <article className="mb-8 overflow-hidden rounded-2xl border border-purple-100 bg-white shadow-xl">
           <img
-            src="/manus-storage/formacao-tc_7cc0709d.png"
+            src="/images/formacao-tc.png"
             alt="Formação Terapeuta Cristã"
             className="h-auto w-full"
           />
@@ -85,7 +85,7 @@ export default function Formacoes() {
         <div className="grid gap-6 md:grid-cols-2">
           <article className="overflow-hidden rounded-2xl border border-purple-100 bg-white shadow-lg transition-shadow duration-300 hover:shadow-xl">
             <img
-              src="/manus-storage/teologia_3ca58562.png"
+              src="/images/teologia.png"
               alt="Formação em Teologia"
               className="h-auto w-full"
             />
@@ -100,7 +100,7 @@ export default function Formacoes() {
 
           <article className="overflow-hidden rounded-2xl border border-purple-100 bg-white shadow-lg transition-shadow duration-300 hover:shadow-xl">
             <img
-              src="/manus-storage/pos-graduacao_1bedc12c.png"
+              src="/images/pos-graduacao.png"
               alt="Pós-Graduação em Neurociência Cristã e Transformação Comportamental"
               className="h-auto w-full"
             />
@@ -116,7 +116,7 @@ export default function Formacoes() {
 
         <div className="mt-8 overflow-hidden rounded-2xl border border-purple-100 shadow-xl">
           <img
-            src="/manus-storage/no-conforto_487aec4f.png"
+            src="/images/no-conforto.png"
             alt="Formações online no conforto da sua casa"
             className="h-auto w-full"
           />
