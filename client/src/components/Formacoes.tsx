@@ -147,7 +147,7 @@ export default function Formacoes() {
           />
           <div className="relative grid gap-7 bg-gradient-to-r from-[#fffdf8] via-white to-[#f8f0ff] p-6 md:grid-cols-[minmax(0,1fr)_minmax(19rem,0.9fr)] md:items-center md:px-8 md:py-8">
             <div className="max-w-xl">
-              <p className="mb-1 text-[0.68rem] font-bold uppercase tracking-[0.22em] text-purple-700">Em breve no Instituto TC</p>
+              <p className="mb-1 text-[0.68rem] font-bold uppercase tracking-[0.22em] text-brand-teal">Em breve no Instituto TC</p>
               <p className="font-display text-3xl font-semibold text-foreground">Psicanálise e Neurociência</p>
               <p className="mt-2 text-sm leading-relaxed text-foreground/60">
                 Uma nova formação está a caminho. Cadastre-se para receber as informações de abertura, conteúdos e condições de inscrição.

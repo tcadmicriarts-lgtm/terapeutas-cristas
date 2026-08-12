@@ -87,3 +87,10 @@
 - [x] Preparar a nova arte de capacitação fornecida pela usuária.
 - [x] Substituir a imagem promocional anterior que continha MEC.
 - [x] Publicar e enviar a atualização ao GitHub.
+
+# Atualização de cursos e paleta
+
+- [x] Revisar a seção Método Integrado e suas referências na página principal.
+- [x] Remover a seção Método Integrado — Nutrição + Terapia Cristã.
+- [x] Incorporar o verde #14ADA9 como cor de apoio da identidade visual.
+- [ ] Validar, publicar e enviar a atualização ao GitHub.

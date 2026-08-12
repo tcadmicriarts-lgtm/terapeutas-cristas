@@ -46,12 +46,15 @@
 }
 
 :root {
-  /* Brand colors: purple + gold */
+  /* Brand colors: purple + gold, with teal as a supporting color */
   --brand-purple: #6b1fa8;
   --brand-purple-dark: #3d0070;
   --brand-purple-light: #9b3fd4;
   --brand-gold: #D4AF37;
   --brand-gold-light: #F0D060;
+  --brand-teal: #14ADA9;
+  --brand-teal-deep: #0b7976;
+  --brand-teal-soft: #e5f7f6;
 
   --primary: oklch(0.42 0.18 295);
   --primary-foreground: oklch(0.98 0 0);
@@ -185,6 +188,10 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+  }
+
+  .text-brand-teal {
+    color: var(--brand-teal-deep);
   }
 
   .glass-card {

@@ -4,7 +4,6 @@ import PainPoints from "@/components/PainPoints";
 import Formacoes from "@/components/Formacoes";
 import CursosLivres from "@/components/CursosLivres";
 import Livros from "@/components/Livros";
-import Metodo from "@/components/Metodo";
 import Sobre from "@/components/Sobre";
 import Contato from "@/components/Contato";
 import Footer from "@/components/Footer";
@@ -20,7 +19,6 @@ export default function Home() {
         <Formacoes />
         <CursosLivres />
         <Livros />
-        <Metodo />
         <Sobre />
         <Contato />
       </main>
