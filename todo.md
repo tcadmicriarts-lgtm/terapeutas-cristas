@@ -99,4 +99,4 @@
 
 - [x] Revisar a alteração visual aplicada ao título e texto da seção Sobre.
 - [x] Corrigir a cor do título para #14ADA9 e preservar a legibilidade.
-- [ ] Validar, publicar e enviar a atualização ao GitHub.
+- [x] Validar, publicar e enviar a atualização ao GitHub.
