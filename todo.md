@@ -86,4 +86,4 @@
 
 - [x] Preparar a nova arte de capacitação fornecida pela usuária.
 - [x] Substituir a imagem promocional anterior que continha MEC.
-- [ ] Publicar e enviar a atualização ao GitHub.
+- [x] Publicar e enviar a atualização ao GitHub.
