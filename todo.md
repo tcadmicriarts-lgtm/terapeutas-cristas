@@ -66,3 +66,12 @@
 - [x] Incluir os dois novos posts visuais no site.
 - [x] Configurar todos os acessos de Falar Conosco para o WhatsApp.
 - [x] Validar, publicar e enviar a atualização ao GitHub.
+
+# Formulário de interesse em Psicanálise e Neurociência
+
+- [x] Definir o fluxo seguro de cadastro e a estrutura dos leads no Supabase.
+- [x] Preparar o projeto para receber dados e segredos de integração.
+- [x] Criar o formulário com Nome, WhatsApp e E-mail obrigatórios.
+- [x] Criar a tabela SQL e as políticas de acesso para os leads.
+- [ ] Definir o canal e configurar o alerta externo de novo cadastro.
+- [ ] Publicar e enviar a atualização ao GitHub.

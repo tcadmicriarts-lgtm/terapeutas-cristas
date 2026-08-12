@@ -3,6 +3,7 @@
  * Esta seção preserva imagens reais das formações, enquadrando-as em uma apresentação editorial e CTAs claros.
  */
 import { ArrowUpRight, Award, CreditCard, Globe, Clock, MessageCircle } from "lucide-react";
+import PsicanaliseLeadForm from "./PsicanaliseLeadForm";
 
 const checkoutLinks = {
   formacaoTc: "https://pay.kiwify.com.br/KPuty2z",
@@ -128,25 +129,25 @@ export default function Formacoes() {
             alt="Em breve: Psicanálise e Neurociência"
             className="h-auto w-full"
           />
-          <div className="relative flex flex-col gap-5 bg-gradient-to-r from-[#fffdf8] via-white to-[#f8f0ff] p-6 sm:flex-row sm:items-center sm:justify-between md:px-8 md:py-7">
-            <div>
+          <div className="relative grid gap-7 bg-gradient-to-r from-[#fffdf8] via-white to-[#f8f0ff] p-6 md:grid-cols-[minmax(0,1fr)_minmax(19rem,0.9fr)] md:items-center md:px-8 md:py-8">
+            <div className="max-w-xl">
               <p className="mb-1 text-[0.68rem] font-bold uppercase tracking-[0.22em] text-purple-700">Em breve no Instituto TC</p>
-              <p className="font-display text-2xl font-semibold text-foreground">Psicanálise e Neurociência</p>
-              <p className="mt-1 text-sm leading-relaxed text-foreground/60">
-                Uma nova formação está a caminho. Fale com a nossa equipe para receber as novidades.
+              <p className="font-display text-3xl font-semibold text-foreground">Psicanálise e Neurociência</p>
+              <p className="mt-2 text-sm leading-relaxed text-foreground/60">
+                Uma nova formação está a caminho. Cadastre-se para receber as informações de abertura, conteúdos e condições de inscrição.
               </p>
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-purple-700 transition-colors hover:text-purple-900"
+              >
+                <MessageCircle className="h-4 w-4" />
+                Prefere falar com a equipe agora?
+                <ArrowUpRight className="h-4 w-4" />
+              </a>
             </div>
-            <a
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex w-full items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-bold shadow-lg transition-all duration-200 hover:-translate-y-0.5 hover:shadow-xl active:scale-[0.97] sm:w-auto"
-              style={{ background: "linear-gradient(135deg, #6b1fa8, #9b3fd4)", color: "white" }}
-            >
-              <MessageCircle className="h-4 w-4" />
-              Fale Conosco
-              <ArrowUpRight className="h-4 w-4" />
-            </a>
+            <PsicanaliseLeadForm />
           </div>
         </article>
 
