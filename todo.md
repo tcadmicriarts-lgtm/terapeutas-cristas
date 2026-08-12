@@ -42,3 +42,9 @@
 - [x] Comparar os metadados do repositório com o domínio Vercel publicado.
 - [x] Corrigir e publicar eventuais metadados antigos.
 - [ ] Confirmar a prévia atualizada do link compartilhado.
+
+# URL de compartilhamento sem cache antigo
+
+- [x] Criar uma rota exclusiva de compartilhamento com metadados sem MEC.
+- [x] Configurar o Vercel para servir a rota de compartilhamento.
+- [x] Validar a nova URL e enviar a atualização ao GitHub.

@@ -7,6 +7,10 @@
   "outputDirectory": "dist/public",
   "rewrites": [
     {
+      "source": "/formacao",
+      "destination": "/formacao.html"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }
