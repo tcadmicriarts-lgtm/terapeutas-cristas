@@ -27,8 +27,8 @@ export default function Contato() {
           </h2>
 
           <p className="text-foreground/60 text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
-            Fale com nossa equipe e descubra como nossas formações podem te ajudar a
-            transformar vidas com fé, técnica e reconhecimento oficial.
+            Fale com nossa equipe e descubra como unir fé, técnica e chamado em uma
+            formação de capacitação profissional reconhecida em todo o Brasil.
           </p>
 
           {/* CTAs */}

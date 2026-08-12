@@ -59,3 +59,10 @@
 - [x] Preparar a nova arte enviada para o diretório público do frontend.
 - [x] Substituir a imagem exibida na seção Cursos Livres.
 - [x] Validar o build e enviar a atualização ao GitHub.
+
+# Novos posts e contato por WhatsApp
+
+- [x] Revisar os locais apropriados para os posts de Psicanálise e Neurociência e Livros para Mulheres.
+- [x] Incluir os dois novos posts visuais no site.
+- [x] Configurar todos os acessos de Falar Conosco para o WhatsApp.
+- [x] Validar, publicar e enviar a atualização ao GitHub.
