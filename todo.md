@@ -36,3 +36,9 @@
 - [x] Localizar eventuais menções a MEC no conteúdo do site.
 - [x] Atualizar os textos de certificação para a redação aprovada.
 - [x] Validar e enviar a atualização ao GitHub.
+
+# Atualização da prévia compartilhada
+
+- [x] Comparar os metadados do repositório com o domínio Vercel publicado.
+- [x] Corrigir e publicar eventuais metadados antigos.
+- [ ] Confirmar a prévia atualizada do link compartilhado.
