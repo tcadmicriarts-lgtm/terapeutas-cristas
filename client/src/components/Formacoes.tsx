@@ -42,11 +42,11 @@ export default function Formacoes() {
             <span className="text-sm font-semibold text-purple-700">Conheça Nossas Formações</span>
           </div>
           <h2 className="font-display text-3xl font-semibold leading-tight text-foreground md:text-4xl lg:text-5xl">
-            Formações com Certificação de Capacitação Profissional —{" "}
-            <span className="text-gradient-brand">válidas em todo o Brasil</span>
+            Formações de Capacitação Profissional{" "}
+            <span className="text-gradient-brand">reconhecidas em todo o Brasil</span>
           </h2>
           <p className="mt-4 text-lg text-foreground/60">
-            Cursos 100% online, com chancela da Faculdade FEX Educação. Comece hoje.
+            Cursos 100% online para fortalecer sua prática profissional. Comece hoje.
           </p>
         </div>
 
@@ -54,7 +54,7 @@ export default function Formacoes() {
           {[
             { icon: Globe, label: "100% Online" },
             { icon: Clock, label: "Aulas ao Vivo e Gravadas" },
-            { icon: Award, label: "Certificação Validada" },
+            { icon: Award, label: "Capacitação Reconhecida" },
           ].map(({ icon: Icon, label }) => (
             <div key={label} className="flex items-center gap-2 text-foreground/60">
               <Icon className="h-5 w-5 text-purple-600" />

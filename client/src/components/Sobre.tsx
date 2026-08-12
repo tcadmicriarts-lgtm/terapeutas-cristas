@@ -8,8 +8,8 @@ const valores = [
   },
   {
     icon: Shield,
-    title: "Certificação",
-    description: "Certificação de capacitação profissional validada para atuar com segurança e credibilidade.",
+    title: "Capacitação",
+    description: "Capacitação profissional reconhecida em todo o Brasil para atuar com segurança e credibilidade.",
   },
   {
     icon: Users,

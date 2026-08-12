@@ -30,3 +30,9 @@
 - [x] Identificar imagens e links que dependem do ambiente Manus.
 - [x] Incluir as imagens reais no diretório público do frontend e ajustar as referências.
 - [x] Validar o build estático e enviar a correção ao GitHub.
+
+# Revisão da certificação
+
+- [x] Localizar eventuais menções a MEC no conteúdo do site.
+- [x] Atualizar os textos de certificação para a redação aprovada.
+- [x] Validar e enviar a atualização ao GitHub.

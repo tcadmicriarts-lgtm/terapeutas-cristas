@@ -33,7 +33,7 @@ export default function Hero() {
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/30">
               <ShieldCheck className="w-4 h-4 text-yellow-300" />
-              <span className="text-sm font-semibold text-white">Certificação de Capacitação Profissional Validada</span>
+              <span className="text-sm font-semibold text-white">Capacitação Profissional Reconhecida em Todo o Brasil</span>
             </div>
 
             {/* Heading */}
@@ -49,7 +49,7 @@ export default function Hero() {
 
             <p className="text-white/80 text-lg leading-relaxed max-w-xl">
               Construa sua carreira sem abrir mão da sua fé. Capacite-se para transformar vidas
-              e ser reconhecida com certificação de capacitação profissional validada.
+              e ser reconhecida por uma capacitação profissional sólida e transformadora.
             </p>
 
             {/* Stats */}
@@ -59,8 +59,8 @@ export default function Hero() {
                 <p className="text-xs text-white/70 mt-1">Online</p>
               </div>
               <div className="text-center border-l border-white/20">
-                <p className="font-display text-3xl font-bold" style={{ color: "#D4AF37" }}>Validada</p>
-                <p className="text-xs text-white/70 mt-1">Certificação Profissional</p>
+                <p className="font-display text-3xl font-bold" style={{ color: "#D4AF37" }}>Capacitação</p>
+                <p className="text-xs text-white/70 mt-1">Reconhecida em Todo o Brasil</p>
               </div>
             </div>
 
@@ -102,8 +102,8 @@ export default function Hero() {
                     <Star key={i} className="w-3 h-3 fill-yellow-400 text-yellow-400" />
                   ))}
                 </div>
-                <p className="text-xs font-semibold text-gray-800">Certificação reconhecida</p>
-                <p className="text-xs text-gray-500">em todo o Brasil</p>
+                <p className="text-xs font-semibold text-gray-800">Capacitação profissional</p>
+                <p className="text-xs text-gray-500">reconhecida em todo o Brasil</p>
               </div>
             </div>
           </div>
