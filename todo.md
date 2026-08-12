@@ -18,3 +18,9 @@
 - [x] Verificar o comando de build e o diretório de saída do frontend.
 - [x] Criar o arquivo vercel.json na raiz do repositório.
 - [x] Validar a compilação e enviar a configuração ao GitHub.
+
+# Correção de dependências do Vercel
+
+- [x] Verificar o conflito entre o Vite e suas dependências.
+- [x] Adicionar uma configuração de instalação compatível com o Vercel.
+- [x] Validar a instalação limpa, compilar e enviar a correção ao GitHub.
