@@ -9,6 +9,6 @@
 
 - [x] Verificar a disponibilidade da integração com o GitHub.
 - [x] Regularizar a permissão do GitHub para criar o novo repositório.
-- [ ] Autorizar a gravação do código no repositório informado.
-- [ ] Enviar o código atualizado do site ao repositório informado.
-- [ ] Confirmar a URL do repositório exportado ao usuário.
+- [x] Autorizar a gravação do código no repositório informado.
+- [x] Enviar o código atualizado do site ao repositório informado.
+- [x] Confirmar a URL do repositório exportado ao usuário.
