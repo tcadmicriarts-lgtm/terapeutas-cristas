@@ -74,10 +74,10 @@
 - [x] Criar o formulário com Nome, WhatsApp e E-mail obrigatórios.
 - [x] Criar a tabela SQL e as políticas de acesso para os leads.
 - [ ] Confirmar com a usuária se os alertas externos serão configurados agora ou em uma etapa futura.
-- [ ] Publicar e enviar a atualização ao GitHub.
+- [x] Publicar e enviar a atualização ao GitHub.
 
 # Remoção definitiva de MEC
 
 - [x] Auditar textos, metadados e artes exibidas para localizar qualquer menção a MEC.
 - [x] Remover do site as artes que contenham MEC e manter apenas conteúdos adequados.
-- [ ] Validar a ausência de MEC, publicar e enviar a correção ao GitHub.
+- [x] Validar a ausência de MEC, publicar e enviar a correção ao GitHub.
