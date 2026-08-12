@@ -60,7 +60,10 @@ export default function Sobre() {
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-100">
               <span className="text-sm font-semibold text-purple-700">Nossa Missão</span>
             </div>
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground leading-tight">
+            <h2
+              className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight"
+              style={{ backgroundColor: "#ffffff", color: "#14ADA9" }}
+            >
               Uma plataforma que une{" "}
               <span className="text-gradient-brand">fé, técnica e reconhecimento</span>{" "}
               para mulheres cristãs

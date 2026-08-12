@@ -94,3 +94,9 @@
 - [x] Remover a seção Método Integrado — Nutrição + Terapia Cristã.
 - [x] Incorporar o verde #14ADA9 como cor de apoio da identidade visual.
 - [x] Validar, publicar e enviar a atualização ao GitHub.
+
+# Personalização visual da seção Sobre
+
+- [x] Revisar a alteração visual aplicada ao título e texto da seção Sobre.
+- [x] Corrigir a cor do título para #14ADA9 e preservar a legibilidade.
+- [ ] Validar, publicar e enviar a atualização ao GitHub.
