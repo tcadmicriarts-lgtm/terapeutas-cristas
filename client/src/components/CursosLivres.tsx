@@ -29,8 +29,8 @@ export default function CursosLivres() {
 
         <div className="mb-8 overflow-hidden rounded-2xl border border-purple-100 bg-white shadow-xl">
           <img
-            src="/images/cursos-livres.png"
-            alt="Cursos Livres: Terapeuta Nutricional, Marketing Digital, Palestrante de Sucesso e Aperfeiçoamento"
+            src="/images/cursos-livres-valores.png"
+            alt="Cursos Livres com condições de parcelamento e valores"
             className="h-auto w-full"
           />
         </div>

@@ -48,3 +48,14 @@
 - [x] Criar uma rota exclusiva de compartilhamento com metadados sem MEC.
 - [x] Configurar o Vercel para servir a rota de compartilhamento.
 - [x] Validar a nova URL e enviar a atualização ao GitHub.
+
+# Confirmação do link compartilhado
+
+- [x] Confirmar que o endereço enviado não é a URL raiz armazenada em cache.
+- [x] Validar a rota de compartilhamento sem a referência antiga.
+
+# Atualização da imagem de Cursos Livres
+
+- [x] Preparar a nova arte enviada para o diretório público do frontend.
+- [x] Substituir a imagem exibida na seção Cursos Livres.
+- [x] Validar o build e enviar a atualização ao GitHub.
