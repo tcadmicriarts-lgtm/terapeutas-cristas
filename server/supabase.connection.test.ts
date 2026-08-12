@@ -5,10 +5,13 @@ describe("conexão do Supabase", () => {
     const url = process.env.SUPABASE_URL;
     const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
 
-    expect(url).toMatch(/^https:\/\/.+\.supabase\.co$/);
+    expect(url).toBeTruthy();
     expect(serviceRoleKey).toBeTruthy();
 
-    const response = await fetch(`${url}/rest/v1/leads_psicanalise?select=id&limit=1`, {
+    const restUrl = (url as string).replace(/\/+$/, "").replace(/\/rest\/v1$/, "") + "/rest/v1";
+    expect(restUrl).toMatch(/^https:\/\/.+\.supabase\.co\/rest\/v1$/);
+
+    const response = await fetch(`${restUrl}/leads_psicanalise?select=id&limit=1`, {
       headers: {
         apikey: serviceRoleKey as string,
         Authorization: `Bearer ${serviceRoleKey}`,

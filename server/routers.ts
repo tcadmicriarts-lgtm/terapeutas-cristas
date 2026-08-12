@@ -16,6 +16,11 @@ const leadSchema = z.object({
   email: z.string().trim().email("Informe um e-mail válido.").max(320),
 });
 
+function getSupabaseRestUrl(url: string) {
+  const normalizedUrl = url.replace(/\/+$/, "").replace(/\/rest\/v1$/, "");
+  return `${normalizedUrl}/rest/v1`;
+}
+
 export const appRouter = router({
     // if you need to use socket.io, read and register route in server/_core/index.ts, all api should start with '/api/' so that the gateway can route correctly
   system: systemRouter,
@@ -39,7 +44,7 @@ export const appRouter = router({
         });
       }
 
-      const response = await fetch(`${ENV.supabaseUrl}/rest/v1/leads_psicanalise`, {
+      const response = await fetch(`${getSupabaseRestUrl(ENV.supabaseUrl)}/leads_psicanalise`, {
         method: "POST",
         headers: {
           apikey: ENV.supabaseServiceRoleKey,

@@ -70,11 +70,27 @@ export default function Formacoes() {
 
         {/* Formação principal */}
         <article className="mb-8 overflow-hidden rounded-[1.75rem] border border-[#D4AF37]/30 bg-white shadow-[0_22px_55px_rgba(61,0,112,0.12)]">
-          <img
-            src="/manus-storage/formacao-tc_75eaa852.png"
-            alt="Formação Terapeuta Cristã"
-            className="h-auto w-full"
-          />
+          <div className="relative overflow-hidden bg-gradient-to-br from-[#3d0070] via-[#6b1fa8] to-[#a83fc6] px-6 py-10 text-white md:px-10 md:py-12">
+            <div aria-hidden="true" className="absolute -left-16 -top-20 h-56 w-56 rounded-full bg-[#f0d060]/20 blur-3xl" />
+            <div aria-hidden="true" className="absolute -bottom-24 right-0 h-64 w-64 rounded-full bg-white/10 blur-3xl" />
+            <div className="relative max-w-2xl">
+              <div className="inline-flex items-center gap-2 rounded-full border border-[#f0d060]/50 bg-white/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.16em] text-[#f8df85]">
+                <Award className="h-4 w-4" />
+                Instituto TC
+              </div>
+              <h3 className="mt-5 font-display text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl">
+                Formação Terapeutas Cristãs
+              </h3>
+              <p className="mt-4 max-w-xl text-base leading-relaxed text-white/85 sm:text-lg">
+                Uma jornada de capacitação profissional para mulheres que desejam servir com propósito, conhecimento e fé.
+              </p>
+              <div className="mt-7 flex flex-wrap gap-3 text-sm font-semibold text-white/90">
+                <span className="rounded-full border border-white/25 bg-white/10 px-4 py-2">100% online</span>
+                <span className="rounded-full border border-white/25 bg-white/10 px-4 py-2">Aulas ao vivo e gravadas</span>
+                <span className="rounded-full border border-white/25 bg-white/10 px-4 py-2">Capacitação profissional</span>
+              </div>
+            </div>
+          </div>
           <div className="flex flex-col gap-5 bg-gradient-to-r from-[#fffdf8] via-white to-[#f8f0ff] p-6 sm:flex-row sm:items-center sm:justify-between md:px-8 md:py-7">
             <div>
               <p className="mb-1 text-[0.68rem] font-bold uppercase tracking-[0.22em] text-purple-700">Formação principal</p>
