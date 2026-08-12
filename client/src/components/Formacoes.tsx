@@ -70,7 +70,7 @@ export default function Formacoes() {
         {/* Formação principal */}
         <article className="mb-8 overflow-hidden rounded-[1.75rem] border border-[#D4AF37]/30 bg-white shadow-[0_22px_55px_rgba(61,0,112,0.12)]">
           <img
-            src="/images/formacao-tc.png"
+            src="/manus-storage/formacao-tc_75eaa852.png"
             alt="Formação Terapeuta Cristã"
             className="h-auto w-full"
           />
@@ -90,7 +90,7 @@ export default function Formacoes() {
         <div className="grid gap-6 md:grid-cols-2">
           <article className="overflow-hidden rounded-[1.5rem] border border-purple-100 bg-white shadow-lg transition-shadow duration-300 hover:shadow-xl">
             <img
-              src="/images/teologia.png"
+              src="/manus-storage/teologia_0cd9cf69.png"
               alt="Formação em Teologia"
               className="h-auto w-full"
             />

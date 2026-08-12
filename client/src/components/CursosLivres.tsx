@@ -37,7 +37,7 @@ export default function CursosLivres() {
 
         <div className="mb-8 overflow-hidden rounded-2xl border border-purple-100 bg-white shadow-xl">
           <img
-            src="/images/cursos-modulos.png"
+            src="/manus-storage/cursos-modulos_f2257a06.png"
             alt="Cursos livres por módulos: Ministro de Cura, Batalha Espiritual, Cura Interior, Fundamentos da Fé, Libertação e Apocalipse"
             className="h-auto w-full"
           />

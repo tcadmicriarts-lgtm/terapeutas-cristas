@@ -30,7 +30,7 @@ export default function Sobre() {
         {/* Turma formada - full width real image */}
         <div className="rounded-2xl overflow-hidden shadow-2xl mb-16">
           <img
-            src="/images/turma-formada.png"
+            src="/manus-storage/turma-formada_1743c73f.png"
             alt="Turma formada - Seja você a próxima Terapeuta Cristã"
             className="w-full h-auto"
           />

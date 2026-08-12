@@ -36,7 +36,7 @@ export default function Header() {
           <a href="#inicio" className="flex items-center gap-3 group">
             <div className="rounded-xl overflow-hidden shadow-lg transition-transform group-hover:scale-105 w-12 h-12 md:w-14 md:h-14 flex items-center justify-center flex-shrink-0">
               <img
-                src="/images/logo-tc-oficial.png"
+                src="/manus-storage/logo-tc-oficial_fff2ae0d.png"
                 alt="Logo Instituto TC - Terapeutas Cristãs"
                 className="w-full h-full object-contain"
               />
