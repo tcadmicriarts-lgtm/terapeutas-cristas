@@ -7,6 +7,7 @@
 
 # Exportação para GitHub
 
-- [ ] Verificar a disponibilidade da integração com o GitHub.
+- [x] Verificar a disponibilidade da integração com o GitHub.
+- [ ] Regularizar a permissão do GitHub para criar o novo repositório.
 - [ ] Criar um novo repositório e enviar o código atualizado do site.
 - [ ] Confirmar a URL do repositório exportado ao usuário.
