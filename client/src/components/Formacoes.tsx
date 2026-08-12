@@ -169,8 +169,8 @@ export default function Formacoes() {
 
         <div className="mt-8 overflow-hidden rounded-[1.75rem] border border-purple-100 bg-white shadow-xl">
           <img
-            src="/images/no-conforto.png"
-            alt="Formações online no conforto da sua casa"
+            src="/manus-storage/capacitacao-sem-mec_85c50045.png"
+            alt="Formações online no conforto da sua casa com certificação de capacitação"
             className="h-auto w-full"
           />
         </div>

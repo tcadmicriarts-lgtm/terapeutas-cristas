@@ -81,3 +81,9 @@
 - [x] Auditar textos, metadados e artes exibidas para localizar qualquer menção a MEC.
 - [x] Remover do site as artes que contenham MEC e manter apenas conteúdos adequados.
 - [x] Validar a ausência de MEC, publicar e enviar a correção ao GitHub.
+
+# Substituição da arte promocional sem MEC
+
+- [x] Preparar a nova arte de capacitação fornecida pela usuária.
+- [x] Substituir a imagem promocional anterior que continha MEC.
+- [ ] Publicar e enviar a atualização ao GitHub.
