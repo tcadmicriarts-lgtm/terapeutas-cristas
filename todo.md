@@ -12,3 +12,9 @@
 - [x] Autorizar a gravação do código no repositório informado.
 - [x] Enviar o código atualizado do site ao repositório informado.
 - [x] Confirmar a URL do repositório exportado ao usuário.
+
+# Correção do deploy no Vercel
+
+- [x] Verificar o comando de build e o diretório de saída do frontend.
+- [x] Criar o arquivo vercel.json na raiz do repositório.
+- [x] Validar a compilação e enviar a configuração ao GitHub.
