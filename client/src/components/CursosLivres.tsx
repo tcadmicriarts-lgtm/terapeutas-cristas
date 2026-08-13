@@ -3,6 +3,7 @@
  * Os cursos livres usam imagens reais e um CTA de checkout direto, sem simulação de pagamento.
  */
 import { ArrowUpRight, CreditCard } from "lucide-react";
+import { getProjectAssetUrl } from "@/lib/assets";
 
 const CURSOS_LIVRES_CHECKOUT = "https://pag.ae/818FLZegb";
 
@@ -29,7 +30,7 @@ export default function CursosLivres() {
 
         <div className="mb-8 overflow-hidden rounded-2xl border border-purple-100 bg-white shadow-xl">
           <img
-            src="/images/cursos-livres-valores.png"
+            src={getProjectAssetUrl("/manus-storage/cursos-livres-valores_1c5cd834.png")}
             alt="Cursos Livres com condições de parcelamento e valores"
             className="h-auto w-full"
           />
@@ -37,7 +38,7 @@ export default function CursosLivres() {
 
         <div className="mb-8 overflow-hidden rounded-2xl border border-purple-100 bg-white shadow-xl">
           <img
-            src="/manus-storage/cursos-modulos_f2257a06.png"
+            src={getProjectAssetUrl("/manus-storage/cursos-modulos_3c4a8177.png")}
             alt="Cursos livres por módulos: Ministro de Cura, Batalha Espiritual, Cura Interior, Fundamentos da Fé, Libertação e Apocalipse"
             className="h-auto w-full"
           />

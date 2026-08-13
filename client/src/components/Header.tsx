@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X, GraduationCap, MessageCircle } from "lucide-react";
+import { getProjectAssetUrl } from "@/lib/assets";
 
 const WHATSAPP_URL = "https://wa.me/5511989943662";
 
@@ -36,7 +37,7 @@ export default function Header() {
           <a href="#inicio" className="flex items-center gap-3 group">
             <div className="rounded-xl overflow-hidden shadow-lg transition-transform group-hover:scale-105 w-12 h-12 md:w-14 md:h-14 flex items-center justify-center flex-shrink-0">
               <img
-                src="/manus-storage/logo-tc-oficial_fff2ae0d.png"
+                src={getProjectAssetUrl("/manus-storage/logo-tc-oficial_eb38ea52.png")}
                 alt="Logo Instituto TC - Terapeutas Cristãs"
                 className="w-full h-full object-contain"
               />

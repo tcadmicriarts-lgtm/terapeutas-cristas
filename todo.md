@@ -109,3 +109,8 @@
 - [x] Revisar a alteração visual aplicada ao título e texto da seção Sobre.
 - [x] Corrigir a cor do título para #14ADA9 e preservar a legibilidade.
 - [x] Validar, publicar e enviar a atualização ao GitHub.
+
+# Correção de imagens na versão Vercel
+
+- [x] Corrigir as referências das imagens reais que não carregam no domínio Vercel.
+- [ ] Validar visualmente a página pública após a correção dos arquivos estáticos.

@@ -1,5 +1,6 @@
 /* Direção visual: identidade Instituto TC — púrpura e dourado com acentos botânicos discretos e presença editorial. */
 import { BookOpen, Heart, Sparkles, ArrowRight } from "lucide-react";
+import { getProjectAssetUrl } from "@/lib/assets";
 
 const WHATSAPP_URL = "https://wa.me/5511989943662";
 
@@ -52,7 +53,7 @@ export default function Livros() {
             Coleção Instituto TC
           </div>
           <img
-            src="/manus-storage/livros-para-mulheres_9eac413a.png"
+            src={getProjectAssetUrl("/manus-storage/livros-para-mulheres_fbc8768d.png")}
             alt="Livros para Mulheres: Desabrochar, É Amor ou Cilada, Mulheres como Luzeiros no Mundo e Como Amar o Outro sem Perder a Si Mesma"
             className="h-auto w-full"
           />

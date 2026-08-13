@@ -1,4 +1,5 @@
 import { ArrowRight, Star, ShieldCheck } from "lucide-react";
+import { getProjectAssetUrl } from "@/lib/assets";
 
 const WHATSAPP_URL = "https://wa.me/5511989943662";
 
@@ -90,7 +91,7 @@ export default function Hero() {
             <div className="relative w-full max-w-lg">
               <div className="rounded-2xl overflow-hidden shadow-2xl border-2 border-white/20">
                 <img
-                  src="/manus-storage/turma-formada_1743c73f.png"
+                  src={getProjectAssetUrl("/manus-storage/turma-formada_8d23e42c.png")}
                   alt="Turma formada — Seja você a próxima Terapeuta Cristã"
                   className="w-full h-auto"
                 />

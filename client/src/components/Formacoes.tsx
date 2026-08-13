@@ -3,6 +3,7 @@
  * Esta seção preserva imagens reais das formações, enquadrando-as em uma apresentação editorial e CTAs claros.
  */
 import { ArrowUpRight, Award, CreditCard, Globe, Clock, MessageCircle } from "lucide-react";
+import { getProjectAssetUrl } from "@/lib/assets";
 import PsicanaliseLeadForm from "./PsicanaliseLeadForm";
 
 const checkoutLinks = {
@@ -107,7 +108,7 @@ export default function Formacoes() {
         <div className="grid gap-6 md:grid-cols-2">
           <article className="overflow-hidden rounded-[1.5rem] border border-purple-100 bg-white shadow-lg transition-shadow duration-300 hover:shadow-xl">
             <img
-              src="/manus-storage/teologia_0cd9cf69.png"
+              src={getProjectAssetUrl("/manus-storage/teologia_4fe487b1.png")}
               alt="Formação em Teologia"
               className="h-auto w-full"
             />
@@ -123,7 +124,7 @@ export default function Formacoes() {
 
           <article className="overflow-hidden rounded-[1.5rem] border border-purple-100 bg-white shadow-lg transition-shadow duration-300 hover:shadow-xl">
             <img
-              src="/images/pos-graduacao.png"
+              src={getProjectAssetUrl("/manus-storage/pos-graduacao_0b456660.png")}
               alt="Pós-Graduação em Neurociência Cristã e Transformação Comportamental"
               className="h-auto w-full"
             />
@@ -141,7 +142,7 @@ export default function Formacoes() {
         <article className="relative mt-8 overflow-hidden rounded-[1.75rem] border border-[#D4AF37]/35 bg-[#fffdfa] shadow-[0_22px_55px_rgba(61,0,112,0.12)]">
           <div aria-hidden="true" className="absolute -right-14 top-[44%] h-44 w-44 rounded-[48%_52%_44%_56%/60%_42%_58%_40%] bg-[#f0d060]/20 blur-3xl" />
           <img
-            src="/manus-storage/psicanalise-neurociencia_8dcd3088.png"
+            src={getProjectAssetUrl("/manus-storage/psicanalise-neurociencia_f7f8cf0a.png")}
             alt="Em breve: Psicanálise e Neurociência"
             className="h-auto w-full"
           />
@@ -169,7 +170,7 @@ export default function Formacoes() {
 
         <div className="mt-8 overflow-hidden rounded-[1.75rem] border border-purple-100 bg-white shadow-xl">
           <img
-            src="/manus-storage/capacitacao-sem-mec_85c50045.png"
+            src={getProjectAssetUrl("/manus-storage/capacitacao-sem-mec_756ddb0b.png")}
             alt="Formações online no conforto da sua casa com certificação de capacitação"
             className="h-auto w-full"
           />
