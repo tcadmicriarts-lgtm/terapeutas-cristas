@@ -13,5 +13,5 @@ describe("integração Resend", () => {
     });
 
     expect(response.ok, `Resend respondeu com HTTP ${response.status}`).toBe(true);
-  });
+  }, 15_000);
 });

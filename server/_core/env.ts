@@ -12,4 +12,5 @@ export const ENV = {
   resendApiKey: process.env.RESEND_API_KEY ?? "",
   leadAlertFrom: process.env.LEAD_ALERT_FROM ?? "adcursos@terapeutascristas.com",
   leadAlertTo: process.env.LEAD_ALERT_TO ?? "terapeutascristascursos@gmail.com",
+  adminAccessPassword: process.env.ADMIN_ACCESS_PASSWORD ?? "",
 };

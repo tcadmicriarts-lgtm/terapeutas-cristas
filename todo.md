@@ -120,3 +120,18 @@
 - [x] Validar visualmente a página pública após a correção dos arquivos estáticos.
 - [x] Corrigir a imagem remanescente da seção Sobre para o proxy público e revalidar a página sem referências antigas quebradas.
 - [x] Validar objetivamente a rota de compartilhamento e seus metadados sociais atualizados.
+
+# Gestão de leads, boas-vindas e origem de campanhas
+
+- [x] Configurar a credencial segura de acesso ao painel administrativo.
+- [x] Criar o acesso administrativo protegido para a lista de leads.
+- [x] Exibir todos os dados dos leads e disponibilizar a exportação completa em CSV.
+- [x] Implementar paginação para a visualização e uma exportação protegida sem limite de leads.
+- [x] Incluir o identificador e o consentimento no painel e na exportação CSV protegida.
+- [x] Cobrir a exportação de múltiplos lotes e todos os campos no teste automatizado do painel.
+- [x] Enviar o e-mail de boas-vindas com o grupo de WhatsApp após um cadastro.
+- [x] Capturar os parâmetros UTM no formulário e armazená-los com cada lead.
+- [x] Cobrir as regras de acesso, e-mail e UTMs com testes automatizados.
+- [x] Testar o payload de UTMs enviado ao Supabase pelo cadastro de lead.
+- [x] Testar o envio do formulário para garantir que UTMs da URL acompanhem a solicitação.
+- [ ] Validar a experiência, publicar e sincronizar as melhorias.

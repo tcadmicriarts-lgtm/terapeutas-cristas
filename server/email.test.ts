@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { sendLeadAlertEmail } from "./email";
+import { sendLeadAlertEmail, sendWelcomeEmail } from "./email";
 
 describe("sendLeadAlertEmail", () => {
   afterEach(() => {
@@ -48,5 +48,23 @@ describe("sendLeadAlertEmail", () => {
     ).resolves.toBe(false);
 
     expect(warn).toHaveBeenCalled();
+  });
+
+  it("envia a confirmação de boas-vindas ao e-mail cadastrado com o convite do WhatsApp", async () => {
+    const fetchMock = vi.fn().mockResolvedValue(new Response('{"id":"email_456"}', { status: 200 }));
+    vi.stubGlobal("fetch", fetchMock);
+
+    await expect(
+      sendWelcomeEmail({ nome: "Ana Maria", whatsapp: "5511989943662", email: "ana@example.com" })
+    ).resolves.toBe(true);
+
+    const [, options] = fetchMock.mock.calls[0] as [string, RequestInit];
+    const payload = JSON.parse(String(options.body));
+    expect(payload).toMatchObject({
+      from: process.env.LEAD_ALERT_FROM,
+      to: ["ana@example.com"],
+      subject: "Confirmação da sua inscrição | Terapeutas Cristãs 🌿",
+    });
+    expect(payload.html).toContain("https://chat.whatsapp.com/JAoqm6FRyrj43Bt1ng5RGe");
   });
 });

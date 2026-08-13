@@ -1,16 +1,19 @@
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { trpc } from "@/lib/trpc";
+import { captureUtmParameters, type UTMParameters, withUtmParameters } from "@/lib/utm";
 import { CheckCircle2, Loader2, Send } from "lucide-react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 
 type LeadFormValues = {
   nome: string;
   whatsapp: string;
   email: string;
-};
+} & UTMParameters;
 
 export default function PsicanaliseLeadForm() {
+  const [utmParameters] = useState(() => captureUtmParameters(window.location.search));
   const form = useForm<LeadFormValues>({
     defaultValues: { nome: "", whatsapp: "", email: "" },
   });
@@ -19,7 +22,7 @@ export default function PsicanaliseLeadForm() {
   });
 
   const handleSubmit = (values: LeadFormValues) => {
-    createLead.mutate(values);
+    createLead.mutate(withUtmParameters(values, utmParameters));
   };
 
   return (
