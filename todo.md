@@ -41,7 +41,7 @@
 
 - [x] Comparar os metadados do repositório com o domínio Vercel publicado.
 - [x] Corrigir e publicar eventuais metadados antigos.
-- [ ] Confirmar a prévia atualizada do link compartilhado.
+- [x] Confirmar a prévia atualizada do link compartilhado.
 
 # URL de compartilhamento sem cache antigo
 
@@ -114,3 +114,5 @@
 
 - [x] Corrigir as referências das imagens reais que não carregam no domínio Vercel.
 - [ ] Validar visualmente a página pública após a correção dos arquivos estáticos.
+- [x] Corrigir a imagem remanescente da seção Sobre para o proxy público e revalidar a página sem referências antigas quebradas.
+- [x] Validar objetivamente a rota de compartilhamento e seus metadados sociais atualizados.

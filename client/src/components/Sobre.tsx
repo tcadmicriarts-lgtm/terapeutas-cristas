@@ -1,4 +1,5 @@
 import { Target, Users, Shield, HeartHandshake } from "lucide-react";
+import { getProjectAssetUrl } from "@/lib/assets";
 
 const valores = [
   {
@@ -30,7 +31,7 @@ export default function Sobre() {
         {/* Turma formada - full width real image */}
         <div className="rounded-2xl overflow-hidden shadow-2xl mb-16">
           <img
-            src="/manus-storage/turma-formada_1743c73f.png"
+            src={getProjectAssetUrl("/manus-storage/turma-formada_8d23e42c.png")}
             alt="Turma formada - Seja você a próxima Terapeuta Cristã"
             className="w-full h-auto"
           />
