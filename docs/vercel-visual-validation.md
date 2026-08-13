@@ -7,3 +7,5 @@ Após o envio da correção ao GitHub, uma nova consulta ao mesmo endereço aind
 Na verificação posterior, a nova implantação foi identificada e carregou as referências atualizadas via `https://teracristas-fsnv789j.manus.space/manus-storage/`. A captura visual confirmou a exibição da logo oficial e da imagem principal da turma no domínio Vercel.
 
 Também foi validada a rota de compartilhamento `https://terapeutas-cristas.vercel.app/formacao`. Ela retorna o título, a descrição e as tags Open Graph e Twitter com a redação de capacitação profissional, sem a terminologia proibida. A imagem social aponta para a logo oficial do Instituto TC por meio do armazenamento público do projeto.
+
+A verificação no navegador confirmou que as dez imagens da página, incluindo logo, hero e a imagem da seção Sobre, foram carregadas com dimensões naturais válidas. Portanto, os ativos públicos estão disponíveis no domínio Vercel após a implantação mais recente.

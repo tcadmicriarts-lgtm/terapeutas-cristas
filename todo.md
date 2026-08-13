@@ -84,6 +84,9 @@
 - [ ] Validar o alerta de novo formulário e publicar a atualização.
 - [x] Integrar o envio não bloqueante do Resend após o registro seguro do lead.
 - [ ] Validar a configuração do remetente, compilar e publicar os alertas.
+- [x] Confirmar a capacidade de envio ativa para terapeutascristas.com no Resend.
+- [ ] Enviar e confirmar o e-mail de teste para o destinatário definido.
+- [ ] Confirmar o recebimento do e-mail de teste em terapeutascristascursos@gmail.com e registrar a entrega.
 
 # Remoção definitiva de MEC
 
@@ -113,6 +116,6 @@
 # Correção de imagens na versão Vercel
 
 - [x] Corrigir as referências das imagens reais que não carregam no domínio Vercel.
-- [ ] Validar visualmente a página pública após a correção dos arquivos estáticos.
+- [x] Validar visualmente a página pública após a correção dos arquivos estáticos.
 - [x] Corrigir a imagem remanescente da seção Sobre para o proxy público e revalidar a página sem referências antigas quebradas.
 - [x] Validar objetivamente a rota de compartilhamento e seus metadados sociais atualizados.
