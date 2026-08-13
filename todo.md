@@ -134,4 +134,25 @@
 - [x] Cobrir as regras de acesso, e-mail e UTMs com testes automatizados.
 - [x] Testar o payload de UTMs enviado ao Supabase pelo cadastro de lead.
 - [x] Testar o envio do formulário para garantir que UTMs da URL acompanhem a solicitação.
+- [x] Resolver o erro transitório do ambiente referente ao e-mail de boas-vindas e revalidar o console.
+- [x] Validar no navegador o acesso administrativo, a listagem paginada e a exportação CSV protegida.
+- [ ] Validar no navegador a confirmação de cadastro com UTMs capturadas.
 - [ ] Validar a experiência, publicar e sincronizar as melhorias.
+- [x] Confirmar no console que o erro transitório do e-mail de boas-vindas não reaparece após o reinício.
+- [x] Validar visualmente os controles de paginação e o estado apropriado para a quantidade atual de leads.
+
+# Validação do e-mail de boas-vindas e orientações de gestão
+
+- [x] Confirmar com a usuária a abertura correta do CSV exportado no Excel.
+- [x] Enviar um e-mail de boas-vindas de teste ao endereço de suporte.
+- [x] Validar o link do grupo de WhatsApp presente no e-mail de boas-vindas.
+- [x] Documentar como conferir UTMs no painel e no CSV.
+- [x] Documentar o procedimento seguro para trocar a senha do painel administrativo.
+
+# Correção do fluxo de e-mails de cadastro
+
+- [x] Identificar e desativar a notificação externa com remetente Manus Team.
+- [x] Garantir que o aviso de novo interesse seja entregue apenas ao e-mail de suporte.
+- [x] Garantir que a confirmação seja entregue apenas ao e-mail informado pela cliente.
+- [x] Personalizar a saudação com o nome da cliente e assinar como Adeilda e Débora.
+- [x] Testar os dois destinatários do fluxo de cadastro com a mensagem acolhedora atualizada.

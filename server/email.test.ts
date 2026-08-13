@@ -66,5 +66,8 @@ describe("sendLeadAlertEmail", () => {
       subject: "Confirmação da sua inscrição | Terapeutas Cristãs 🌿",
     });
     expect(payload.html).toContain("https://chat.whatsapp.com/JAoqm6FRyrj43Bt1ng5RGe");
+    expect(payload.html).toContain("Olá, Ana Maria!");
+    expect(payload.html).toContain("A paz do Senhor!");
+    expect(payload.html).toContain("Adeilda e Débora");
   });
 });

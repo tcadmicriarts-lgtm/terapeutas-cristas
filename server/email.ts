@@ -39,22 +39,25 @@ function buildLeadAlertEmail(lead: LeadAlertInput) {
   };
 }
 
-function buildWelcomeEmail() {
+function buildWelcomeEmail(lead: LeadAlertInput) {
+  const nome = escapeHtml(lead.nome);
+
   return {
     from: ENV.leadAlertFrom,
     to: [] as string[],
     subject: "Confirmação da sua inscrição | Terapeutas Cristãs 🌿",
-    text: `Olá!\n\nQue alegria ter você conosco! Confirmamos o seu cadastro com sucesso em nosso site.\n\nPara que você não perca nenhuma novidade, conteúdos exclusivos e os links das nossas Aulas Gratuitas, preparamos um grupo VIP e exclusivo no WhatsApp.\n\nClique aqui para entrar no Grupo de Aulas Gratuitas no WhatsApp:\n${WHATSAPP_GROUP_URL}\n\nConte conosco nessa jornada!\n\nCom carinho,\n\nEquipe Terapeutas Cristãs`,
+    text: `Olá, ${lead.nome}!\n\nA paz do Senhor!\n\nQue alegria ter você conosco. Confirmamos o seu cadastro com sucesso em nosso site.\n\nPara que você não perca nenhuma novidade, conteúdos exclusivos e os links das nossas Aulas Gratuitas, preparamos um grupo VIP e exclusivo no WhatsApp.\n\nClique aqui para entrar no Grupo de Aulas Gratuitas no WhatsApp:\n${WHATSAPP_GROUP_URL}\n\nConte conosco nessa jornada!\n\nCom carinho,\nAdeilda e Débora\nEquipe Terapeutas Cristãs`,
     html: `
       <main style="font-family: Arial, sans-serif; color: #2f2442; line-height: 1.6; max-width: 620px; margin: 0 auto; padding: 24px;">
-        <h1 style="font-family: Georgia, serif; color: #6b1fa8; font-size: 28px;">Olá!</h1>
-        <p>Que alegria ter você conosco! Confirmamos o seu cadastro com sucesso em nosso site.</p>
+        <h1 style="font-family: Georgia, serif; color: #6b1fa8; font-size: 28px;">Olá, ${nome}!</h1>
+        <p><strong>A paz do Senhor!</strong></p>
+        <p>Que alegria ter você conosco. Confirmamos o seu cadastro com sucesso em nosso site.</p>
         <p>Para que você não perca nenhuma novidade, conteúdos exclusivos e os links das nossas Aulas Gratuitas, preparamos um grupo VIP e exclusivo no WhatsApp.</p>
         <p style="margin: 30px 0;">
           <a href="${WHATSAPP_GROUP_URL}" style="display: inline-block; background: #14ADA9; color: #ffffff; text-decoration: none; font-weight: 700; padding: 14px 20px; border-radius: 8px;">Entrar no Grupo de Aulas Gratuitas no WhatsApp</a>
         </p>
         <p>Conte conosco nessa jornada!</p>
-        <p style="margin-top: 28px;">Com carinho,<br /><strong>Equipe Terapeutas Cristãs</strong></p>
+        <p style="margin-top: 28px;">Com carinho,<br /><strong>Adeilda e Débora</strong><br />Equipe Terapeutas Cristãs</p>
       </main>`,
   };
 }
@@ -99,7 +102,7 @@ export async function sendLeadAlertEmail(lead: LeadAlertInput): Promise<boolean>
 
 /** Envia a confirmação de boas-vindas após o cadastro, sem impedir o registro do lead em caso de falha externa. */
 export async function sendWelcomeEmail(lead: LeadAlertInput): Promise<boolean> {
-  const message = buildWelcomeEmail();
+  const message = buildWelcomeEmail(lead);
   message.to = [lead.email];
   return sendResendEmail(message, "E-mail de boas-vindas");
 }

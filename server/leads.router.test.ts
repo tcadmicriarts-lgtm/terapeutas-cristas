@@ -55,5 +55,16 @@ describe("leads.create", () => {
       utm_term: "terapia-crista",
       utm_content: "reel-1",
     });
+
+    expect(fetchMock).toHaveBeenCalledTimes(3);
+    const emailPayloads = fetchMock.mock.calls
+      .filter(([url]) => String(url) === "https://api.resend.com/emails")
+      .map(([, options]) => JSON.parse(String((options as RequestInit).body)));
+    expect(emailPayloads).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({ to: [process.env.LEAD_ALERT_TO] }),
+        expect.objectContaining({ to: ["ana.utm@example.com"] }),
+      ])
+    );
   });
 });

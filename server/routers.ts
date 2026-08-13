@@ -11,7 +11,6 @@ import {
 } from "./adminAuth";
 import { getSessionCookieOptions } from "./_core/cookies";
 import { ENV } from "./_core/env";
-import { notifyOwner } from "./_core/notification";
 import { systemRouter } from "./_core/systemRouter";
 import { publicProcedure, router } from "./_core/trpc";
 import { sendLeadAlertEmail, sendWelcomeEmail } from "./email";
@@ -198,16 +197,12 @@ export const appRouter = router({
         });
       }
 
-      const notificationSent = await notifyOwner({
-        title: "Novo interesse em Psicanálise e Neurociência",
-        content: "Um novo lead foi cadastrado pelo formulário do site. Consulte a tabela leads_psicanalise no Supabase para realizar o atendimento.",
-      }).catch(() => false);
       const [emailAlertSent, welcomeEmailSent] = await Promise.all([
         sendLeadAlertEmail(lead),
         sendWelcomeEmail(lead),
       ]);
 
-      return { success: true, notificationSent, emailAlertSent, welcomeEmailSent } as const;
+      return { success: true, emailAlertSent, welcomeEmailSent } as const;
     }),
   }),
 });

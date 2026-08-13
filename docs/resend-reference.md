@@ -18,3 +18,9 @@ Após a propagação do DNS, uma nova consulta autenticada confirmou `terapeutas
 ## Validação funcional concluída
 
 A usuária confirmou que realizou um cadastro real de interesse em Psicanálise e Neurociência e recebeu o aviso **“Novo interesse: Psicanálise e Neurociência”** no e-mail de suporte. A validação comprova o fluxo completo: formulário, armazenamento do lead e alerta automático pelo remetente configurado.
+
+## Separação entre suporte e cliente
+
+O fluxo foi revisado para manter duas mensagens diferentes. O suporte recebe exclusivamente o alerta **“Novo interesse: Psicanálise e Neurociência”**. A pessoa que preenche o formulário recebe exclusivamente a confirmação **“Confirmação da sua inscrição | Terapeutas Cristãs”**, com saudação nominal, a bênção “A paz do Senhor!”, o botão do grupo de WhatsApp e a assinatura de Adeilda e Débora.
+
+Em 13 de agosto de 2026, a usuária confirmou o recebimento dessa mensagem personalizada no e-mail de teste e a renderização do botão do grupo. O aviso antigo com remetente Manus Team foi identificado como uma notificação adicional de gestão e foi removido do fluxo de novos cadastros.
