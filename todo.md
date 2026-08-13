@@ -158,3 +158,10 @@
 - [x] Garantir que a confirmação seja entregue apenas ao e-mail informado pela cliente.
 - [x] Personalizar a saudação com o nome da cliente e assinar como Adeilda e Débora.
 - [x] Testar os dois destinatários do fluxo de cadastro com a mensagem acolhedora atualizada.
+
+# Próxima estratégia de captação e automação
+
+- [x] Criar uma skill reutilizável com o processo de captação, e-mails, painel e UTMs implantado.
+- [x] Mapear os requisitos oficiais, o consentimento e a conexão necessária para mensagem automática no WhatsApp.
+- [x] Definir a prioridade entre filtros de campanha, busca de leads e material de captação.
+- [ ] Apresentar uma recomendação objetiva de próximos recursos antes de implementar novos fluxos.
