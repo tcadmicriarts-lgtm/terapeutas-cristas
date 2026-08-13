@@ -85,8 +85,9 @@
 - [x] Integrar o envio não bloqueante do Resend após o registro seguro do lead.
 - [ ] Validar a configuração do remetente, compilar e publicar os alertas.
 - [x] Confirmar a capacidade de envio ativa para terapeutascristas.com no Resend.
-- [ ] Enviar e confirmar o e-mail de teste para o destinatário definido.
-- [ ] Confirmar o recebimento do e-mail de teste em terapeutascristascursos@gmail.com e registrar a entrega.
+- [x] Enviar o e-mail de teste para o destinatário definido e registrar a aceitação pelo provedor.
+- [x] Confirmar o recebimento de um alerta real em terapeutascristascursos@gmail.com e registrar a entrega.
+- [x] Registrar a confirmação da usuária de que um cadastro real gerou o alerta por e-mail.
 
 # Remoção definitiva de MEC
 
