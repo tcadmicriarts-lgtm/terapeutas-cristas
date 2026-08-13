@@ -164,4 +164,6 @@
 - [x] Criar uma skill reutilizável com o processo de captação, e-mails, painel e UTMs implantado.
 - [x] Mapear os requisitos oficiais, o consentimento e a conexão necessária para mensagem automática no WhatsApp.
 - [x] Definir a prioridade entre filtros de campanha, busca de leads e material de captação.
-- [ ] Apresentar uma recomendação objetiva de próximos recursos antes de implementar novos fluxos.
+- [x] Apresentar uma recomendação objetiva de próximos recursos antes de implementar novos fluxos.
+- [x] Registrar que o Resend continuará enviando a confirmação com o convite do grupo, sem ativar a API direta do WhatsApp nesta etapa.
+- [x] Entregar a skill reutilizável de gestão de leads à usuária.

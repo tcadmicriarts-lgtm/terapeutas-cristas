@@ -21,6 +21,14 @@ O formulário deverá incluir uma opção desmarcada, por exemplo: **“Autorizo
 
 Para ativar essa etapa, será preciso decidir entre usar a **WhatsApp Cloud API da Meta** diretamente ou um provedor oficial de WhatsApp Business. Em ambos os casos, a equipe precisará ter uma conta empresarial, um número comercial, uma conta do WhatsApp Business, credenciais seguras e um modelo de mensagem aprovado. A integração ainda não foi criada porque não há conexão oficial de WhatsApp configurada no projeto.
 
+### Decisão da etapa atual
+
+Por decisão da usuária em 13 de agosto de 2026, a API direta do WhatsApp não será ativada agora. A jornada continua com o e-mail automático pelo Resend, que já está ativo, personalizado e inclui o convite para o grupo de Aulas Gratuitas no WhatsApp. Essa escolha evita adicionar uma integração externa antes de haver necessidade operacional e uma conta empresarial oficial preparada.
+
+### Skill reutilizável entregue
+
+A skill **Lead Acquisition Operations** foi criada e entregue em pacote. Ela consolida o processo de captação implementado neste projeto: formulário de leads, consentimento, e-mails, painel administrativo, exportação CSV, UTMs, segurança e critérios para automações futuras. O pacote distribuído é `lead-acquisition-operations-skill.zip`.
+
 ## Material gratuito como isca de captação
 
 Um PDF pode funcionar muito bem, desde que seja realmente útil e coerente com a formação. As opções mais fortes para este público são um **guia prático de acolhimento cristão**, um **checklist para identificar caminhos de cuidado emocional à luz da fé** ou uma **aula introdutória gratuita**. A recomendação é entregar o material imediatamente na página de confirmação e repeti-lo no e-mail de boas-vindas; depois, o WhatsApp pode lembrar a pessoa da aula gratuita ou do grupo.
