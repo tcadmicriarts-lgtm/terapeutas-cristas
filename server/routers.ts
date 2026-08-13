@@ -6,6 +6,7 @@ import { ENV } from "./_core/env";
 import { notifyOwner } from "./_core/notification";
 import { systemRouter } from "./_core/systemRouter";
 import { publicProcedure, router } from "./_core/trpc";
+import { sendLeadAlertEmail } from "./email";
 
 const leadSchema = z.object({
   nome: z.string().trim().min(2, "Informe seu nome completo.").max(120),
@@ -44,6 +45,12 @@ export const appRouter = router({
         });
       }
 
+      const lead = {
+        nome: input.nome,
+        whatsapp: input.whatsapp.replace(/\D/g, ""),
+        email: input.email.toLowerCase(),
+      };
+
       const response = await fetch(`${getSupabaseRestUrl(ENV.supabaseUrl)}/leads_psicanalise`, {
         method: "POST",
         headers: {
@@ -52,11 +59,7 @@ export const appRouter = router({
           "Content-Type": "application/json",
           Prefer: "return=minimal",
         },
-        body: JSON.stringify({
-          nome: input.nome,
-          whatsapp: input.whatsapp.replace(/\D/g, ""),
-          email: input.email.toLowerCase(),
-        }),
+        body: JSON.stringify(lead),
       });
 
       if (!response.ok) {
@@ -72,8 +75,9 @@ export const appRouter = router({
         title: "Novo interesse em Psicanálise e Neurociência",
         content: "Um novo lead foi cadastrado pelo formulário do site. Consulte a tabela leads_psicanalise no Supabase para realizar o atendimento.",
       }).catch(() => false);
+      const emailAlertSent = await sendLeadAlertEmail(lead);
 
-      return { success: true, notificationSent } as const;
+      return { success: true, notificationSent, emailAlertSent } as const;
     }),
   }),
 

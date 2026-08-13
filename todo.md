@@ -73,8 +73,17 @@
 - [x] Preparar o projeto para receber dados e segredos de integração.
 - [x] Criar o formulário com Nome, WhatsApp e E-mail obrigatórios.
 - [x] Criar a tabela SQL e as políticas de acesso para os leads.
-- [ ] Confirmar com a usuária se os alertas externos serão configurados agora ou em uma etapa futura.
+- [x] Confirmar com a usuária que os alertas externos serão configurados.
 - [x] Publicar e enviar a atualização ao GitHub.
+
+# Alertas automáticos de novos leads
+
+- [x] Definir o recebimento por e-mail em terapeutascristascursos@gmail.com.
+- [x] Definir o remetente adcursos@terapeutascristas.com e autorizar o uso do Resend.
+- [x] Configurar as credenciais e o envio seguro dos alertas.
+- [ ] Validar o alerta de novo formulário e publicar a atualização.
+- [x] Integrar o envio não bloqueante do Resend após o registro seguro do lead.
+- [ ] Validar a configuração do remetente, compilar e publicar os alertas.
 
 # Remoção definitiva de MEC
 

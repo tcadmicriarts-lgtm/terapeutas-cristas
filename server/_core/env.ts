@@ -9,4 +9,7 @@ export const ENV = {
   forgeApiKey: process.env.BUILT_IN_FORGE_API_KEY ?? "",
   supabaseUrl: process.env.SUPABASE_URL ?? "",
   supabaseServiceRoleKey: process.env.SUPABASE_SERVICE_ROLE_KEY ?? "",
+  resendApiKey: process.env.RESEND_API_KEY ?? "",
+  leadAlertFrom: process.env.LEAD_ALERT_FROM ?? "adcursos@terapeutascristas.com",
+  leadAlertTo: process.env.LEAD_ALERT_TO ?? "terapeutascristascursos@gmail.com",
 };
