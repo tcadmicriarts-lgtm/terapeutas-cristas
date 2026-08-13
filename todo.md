@@ -136,7 +136,9 @@
 - [x] Testar o envio do formulário para garantir que UTMs da URL acompanhem a solicitação.
 - [x] Resolver o erro transitório do ambiente referente ao e-mail de boas-vindas e revalidar o console.
 - [x] Validar no navegador o acesso administrativo, a listagem paginada e a exportação CSV protegida.
-- [ ] Validar no navegador a confirmação de cadastro com UTMs capturadas.
+- [x] Validar no navegador a confirmação de cadastro com UTMs capturadas.
+- [x] Executar um cadastro de teste por URL com UTMs e conferir Origem e Campanha no painel.
+- [x] Exportar o CSV do cadastro de teste e conferir os cinco campos UTM gravados.
 - [ ] Validar a experiência, publicar e sincronizar as melhorias.
 - [x] Confirmar no console que o erro transitório do e-mail de boas-vindas não reaparece após o reinício.
 - [x] Validar visualmente os controles de paginação e o estado apropriado para a quantidade atual de leads.
