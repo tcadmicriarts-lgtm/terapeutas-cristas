@@ -81,9 +81,9 @@
 - [x] Definir o recebimento por e-mail em terapeutascristascursos@gmail.com.
 - [x] Definir o remetente adcursos@terapeutascristas.com e autorizar o uso do Resend.
 - [x] Configurar as credenciais e o envio seguro dos alertas.
-- [ ] Validar o alerta de novo formulário e publicar a atualização.
+- [x] Validar o alerta de novo formulário e publicar a atualização.
 - [x] Integrar o envio não bloqueante do Resend após o registro seguro do lead.
-- [ ] Validar a configuração do remetente, compilar e publicar os alertas.
+- [x] Validar a configuração do remetente, compilar e publicar os alertas.
 - [x] Confirmar a capacidade de envio ativa para terapeutascristas.com no Resend.
 - [x] Enviar o e-mail de teste para o destinatário definido e registrar a aceitação pelo provedor.
 - [x] Confirmar o recebimento de um alerta real em terapeutascristascursos@gmail.com e registrar a entrega.
