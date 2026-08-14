@@ -173,5 +173,5 @@
 - [x] Preparar a imagem antiga de Pós-Graduação fornecida pela usuária no armazenamento público do projeto.
 - [x] Substituir a arte atual da Pós-Graduação pela imagem fornecida.
 - [x] Publicar a imagem antiga da Pós-Graduação em um caminho público compatível e registrar o uso efetivo no componente.
-- [ ] Salvar o checkpoint da troca de arte, sincronizar o GitHub e confirmar o deploy final.
-- [ ] Validar visualmente, publicar e sincronizar a atualização.
+- [x] Salvar o checkpoint da troca de arte, sincronizar o GitHub e confirmar o deploy final.
+- [x] Validar visualmente, publicar e sincronizar a atualização.
