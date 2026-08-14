@@ -14,6 +14,7 @@ import { ENV } from "./_core/env";
 import { systemRouter } from "./_core/systemRouter";
 import { publicProcedure, router } from "./_core/trpc";
 import { sendLeadAlertEmail, sendWelcomeEmail } from "./email";
+import { leadMagnet } from "./leadMagnet";
 
 const leadSchema = z.object({
   nome: z.string().trim().min(2, "Informe seu nome completo.").max(120),
@@ -202,7 +203,7 @@ export const appRouter = router({
         sendWelcomeEmail(lead),
       ]);
 
-      return { success: true, emailAlertSent, welcomeEmailSent } as const;
+      return { success: true, emailAlertSent, welcomeEmailSent, leadMagnet } as const;
     }),
   }),
 });

@@ -30,7 +30,7 @@ describe("leads.create", () => {
     vi.stubGlobal("fetch", fetchMock);
 
     const caller = appRouter.createCaller(createPublicContext());
-    await caller.leads.create({
+    const result = await caller.leads.create({
       nome: "Ana UTM",
       whatsapp: "(11) 99999-9999",
       email: "ana.utm@example.com",
@@ -66,5 +66,9 @@ describe("leads.create", () => {
         expect.objectContaining({ to: ["ana.utm@example.com"] }),
       ])
     );
+    expect(result.leadMagnet).toMatchObject({
+      title: "5 Dias para Silenciar a Ansiedade e Ouvir a Voz de Deus",
+      url: expect.stringContaining("guia-5-dias-silenciar-ansiedade_587d0f06.pdf"),
+    });
   });
 });

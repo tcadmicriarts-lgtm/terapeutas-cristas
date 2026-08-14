@@ -2,7 +2,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { trpc } from "@/lib/trpc";
 import { captureUtmParameters, type UTMParameters, withUtmParameters } from "@/lib/utm";
-import { CheckCircle2, Loader2, Send } from "lucide-react";
+import { CheckCircle2, Download, Loader2, Send } from "lucide-react";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 
@@ -35,7 +35,23 @@ export default function PsicanaliseLeadForm() {
       {createLead.isSuccess ? (
         <div className="mt-5 rounded-xl border border-emerald-200 bg-emerald-50 p-4 text-sm text-emerald-900" role="status">
           <CheckCircle2 className="mr-2 inline h-4 w-4" />
-          Interesse registrado com sucesso. Em breve, nossa equipe falará com você.
+          <p className="inline">Interesse registrado com sucesso. Em breve, nossa equipe falará com você.</p>
+          {createLead.data?.leadMagnet && (
+            <div className="mt-4 rounded-lg border border-emerald-200 bg-white p-4">
+              <p className="font-semibold text-emerald-950">Seu presente está pronto.</p>
+              <p className="mt-1 text-emerald-900/80">{createLead.data.leadMagnet.description}</p>
+              <a
+                href={createLead.data.leadMagnet.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 inline-flex min-h-10 items-center gap-2 rounded-full bg-[#6b1fa8] px-4 py-2 font-bold text-white transition-transform duration-200 hover:-translate-y-0.5 active:scale-[0.97]"
+              >
+                <Download className="h-4 w-4" />
+                Baixar “{createLead.data.leadMagnet.title}”
+              </a>
+              <p className="mt-3 text-xs text-emerald-900/70">Também enviamos o acesso para o seu e-mail.</p>
+            </div>
+          )}
         </div>
       ) : (
         <form className="mt-5 grid gap-4" onSubmit={form.handleSubmit(handleSubmit)} noValidate>

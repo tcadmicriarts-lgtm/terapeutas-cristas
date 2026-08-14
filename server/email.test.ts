@@ -66,6 +66,8 @@ describe("sendLeadAlertEmail", () => {
       subject: "Confirmação da sua inscrição | Terapeutas Cristãs 🌿",
     });
     expect(payload.html).toContain("https://chat.whatsapp.com/JAoqm6FRyrj43Bt1ng5RGe");
+    expect(payload.html).toContain("5 Dias para Silenciar a Ansiedade e Ouvir a Voz de Deus");
+    expect(payload.html).toContain("guia-5-dias-silenciar-ansiedade_587d0f06.pdf");
     expect(payload.html).toContain("Olá, Ana Maria!");
     expect(payload.html).toContain("A paz do Senhor!");
     expect(payload.html).toContain("Adeilda e Débora");

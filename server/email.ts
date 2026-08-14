@@ -1,4 +1,5 @@
 import { ENV } from "./_core/env";
+import { leadMagnet } from "./leadMagnet";
 
 export type LeadAlertInput = {
   nome: string;
@@ -46,12 +47,16 @@ function buildWelcomeEmail(lead: LeadAlertInput) {
     from: ENV.leadAlertFrom,
     to: [] as string[],
     subject: "Confirmação da sua inscrição | Terapeutas Cristãs 🌿",
-    text: `Olá, ${lead.nome}!\n\nA paz do Senhor!\n\nQue alegria ter você conosco. Confirmamos o seu cadastro com sucesso em nosso site.\n\nPara que você não perca nenhuma novidade, conteúdos exclusivos e os links das nossas Aulas Gratuitas, preparamos um grupo VIP e exclusivo no WhatsApp.\n\nClique aqui para entrar no Grupo de Aulas Gratuitas no WhatsApp:\n${WHATSAPP_GROUP_URL}\n\nConte conosco nessa jornada!\n\nCom carinho,\nAdeilda e Débora\nEquipe Terapeutas Cristãs`,
+    text: `Olá, ${lead.nome}!\n\nA paz do Senhor!\n\nQue alegria ter você conosco. Confirmamos o seu cadastro com sucesso em nosso site.\n\nComo presente, preparamos o devocional gratuito “${leadMagnet.title}”.\n\nBaixe seu material:\n${leadMagnet.url}\n\nPara que você não perca nenhuma novidade, conteúdos exclusivos e os links das nossas Aulas Gratuitas, preparamos um grupo VIP e exclusivo no WhatsApp.\n\nClique aqui para entrar no Grupo de Aulas Gratuitas no WhatsApp:\n${WHATSAPP_GROUP_URL}\n\nConte conosco nessa jornada!\n\nCom carinho,\nAdeilda e Débora\nEquipe Terapeutas Cristãs`,
     html: `
       <main style="font-family: Arial, sans-serif; color: #2f2442; line-height: 1.6; max-width: 620px; margin: 0 auto; padding: 24px;">
         <h1 style="font-family: Georgia, serif; color: #6b1fa8; font-size: 28px;">Olá, ${nome}!</h1>
         <p><strong>A paz do Senhor!</strong></p>
         <p>Que alegria ter você conosco. Confirmamos o seu cadastro com sucesso em nosso site.</p>
+        <p>Como presente, preparamos o devocional gratuito <strong>“${leadMagnet.title}”</strong>.</p>
+        <p style="margin: 30px 0;">
+          <a href="${leadMagnet.url}" style="display: inline-block; background: #6b1fa8; color: #ffffff; text-decoration: none; font-weight: 700; padding: 14px 20px; border-radius: 8px;">Baixar meu devocional gratuito</a>
+        </p>
         <p>Para que você não perca nenhuma novidade, conteúdos exclusivos e os links das nossas Aulas Gratuitas, preparamos um grupo VIP e exclusivo no WhatsApp.</p>
         <p style="margin: 30px 0;">
           <a href="${WHATSAPP_GROUP_URL}" style="display: inline-block; background: #14ADA9; color: #ffffff; text-decoration: none; font-weight: 700; padding: 14px 20px; border-radius: 8px;">Entrar no Grupo de Aulas Gratuitas no WhatsApp</a>

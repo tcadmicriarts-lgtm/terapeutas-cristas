@@ -175,3 +175,17 @@
 - [x] Publicar a imagem antiga da Pós-Graduação em um caminho público compatível e registrar o uso efetivo no componente.
 - [x] Salvar o checkpoint da troca de arte, sincronizar o GitHub e confirmar o deploy final.
 - [x] Validar visualmente, publicar e sincronizar a atualização.
+
+# Material gratuito e habilidade reutilizável
+
+- [x] Confirmar a publicação atual do site nos domínios Manus e Vercel.
+- [x] Definir o fluxo de entrega do material gratuito após o cadastro, sem expor um link público antes da confirmação.
+- [x] Receber e publicar o arquivo real do material gratuito fornecido pela usuária.
+- [x] Publicar o PDF “5 Dias para Silenciar a Ansiedade e Ouvir a Voz de Deus” no armazenamento seguro do projeto.
+- [x] Integrar o download do material à confirmação de envio do formulário de capacitação.
+- [x] Atualizar, validar e entregar a habilidade reutilizável do processo de captação, e-mails, UTMs, painel e material gratuito.
+- [ ] Testar, publicar e sincronizar as melhorias com o GitHub.
+- [x] Executar os testes automatizados, a compilação e a verificação de disponibilidade do PDF publicado.
+- [ ] Salvar o checkpoint com a integração do material gratuito pós-cadastro.
+- [ ] Fazer commit e push das alterações para a branch `main` do GitHub.
+- [ ] Confirmar a versão publicada no Vercel após a sincronização.
