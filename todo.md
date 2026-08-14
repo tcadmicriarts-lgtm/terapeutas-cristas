@@ -167,3 +167,11 @@
 - [x] Apresentar uma recomendação objetiva de próximos recursos antes de implementar novos fluxos.
 - [x] Registrar que o Resend continuará enviando a confirmação com o convite do grupo, sem ativar a API direta do WhatsApp nesta etapa.
 - [x] Entregar a skill reutilizável de gestão de leads à usuária.
+
+# Substituição da arte de Pós-Graduação
+
+- [x] Preparar a imagem antiga de Pós-Graduação fornecida pela usuária no armazenamento público do projeto.
+- [x] Substituir a arte atual da Pós-Graduação pela imagem fornecida.
+- [x] Publicar a imagem antiga da Pós-Graduação em um caminho público compatível e registrar o uso efetivo no componente.
+- [ ] Salvar o checkpoint da troca de arte, sincronizar o GitHub e confirmar o deploy final.
+- [ ] Validar visualmente, publicar e sincronizar a atualização.

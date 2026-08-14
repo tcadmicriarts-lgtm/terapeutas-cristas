@@ -3,7 +3,7 @@
  * Esta seção preserva imagens reais das formações, enquadrando-as em uma apresentação editorial e CTAs claros.
  */
 import { ArrowUpRight, Award, CreditCard, Globe, Clock, MessageCircle } from "lucide-react";
-import { getProjectAssetUrl } from "@/lib/assets";
+import { getProjectAssetUrl, projectAssets } from "@/lib/assets";
 import PsicanaliseLeadForm from "./PsicanaliseLeadForm";
 
 const checkoutLinks = {
@@ -124,7 +124,7 @@ export default function Formacoes() {
 
           <article className="overflow-hidden rounded-[1.5rem] border border-purple-100 bg-white shadow-lg transition-shadow duration-300 hover:shadow-xl">
             <img
-              src={getProjectAssetUrl("/manus-storage/pos-graduacao_0b456660.png")}
+              src={projectAssets.posGraduacao}
               alt="Pós-Graduação em Neurociência Cristã e Transformação Comportamental"
               className="h-auto w-full"
             />

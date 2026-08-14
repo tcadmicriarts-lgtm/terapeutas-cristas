@@ -7,3 +7,7 @@ const STORAGE_PROXY_ORIGIN = "https://teracristas-fsnv789j.manus.space";
 export function getProjectAssetUrl(storagePath: string): string {
   return new URL(storagePath, STORAGE_PROXY_ORIGIN).toString();
 }
+
+export const projectAssets = {
+  posGraduacao: getProjectAssetUrl("/manus-storage/pos-graduacao-antiga_240a46cc.png"),
+} as const;
