@@ -186,6 +186,6 @@
 - [x] Atualizar, validar e entregar a habilidade reutilizável do processo de captação, e-mails, UTMs, painel e material gratuito.
 - [ ] Testar, publicar e sincronizar as melhorias com o GitHub.
 - [x] Executar os testes automatizados, a compilação e a verificação de disponibilidade do PDF publicado.
-- [ ] Salvar o checkpoint com a integração do material gratuito pós-cadastro.
+- [x] Salvar o checkpoint com a integração do material gratuito pós-cadastro.
 - [ ] Fazer commit e push das alterações para a branch `main` do GitHub.
 - [ ] Confirmar a versão publicada no Vercel após a sincronização.
