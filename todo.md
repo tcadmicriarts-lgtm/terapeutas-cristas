@@ -187,5 +187,12 @@
 - [ ] Testar, publicar e sincronizar as melhorias com o GitHub.
 - [x] Executar os testes automatizados, a compilação e a verificação de disponibilidade do PDF publicado.
 - [x] Salvar o checkpoint com a integração do material gratuito pós-cadastro.
-- [ ] Fazer commit e push das alterações para a branch `main` do GitHub.
+- [x] Fazer commit e push das alterações para a branch `main` do GitHub.
 - [ ] Confirmar a versão publicada no Vercel após a sincronização.
+
+# Correção do formulário na versão Vercel
+
+- [x] Diagnosticar a resposta não JSON da rota de cadastro no Vercel.
+- [x] Ajustar a configuração de publicação para atender o endpoint tRPC do formulário.
+- [ ] Validar o cadastro, o alerta interno, o e-mail de boas-vindas e o acesso ao PDF no Vercel.
+- [ ] Publicar e sincronizar a correção com o GitHub e confirmar o domínio público.
