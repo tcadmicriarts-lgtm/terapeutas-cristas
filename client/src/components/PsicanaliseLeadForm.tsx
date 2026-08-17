@@ -2,7 +2,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { trpc } from "@/lib/trpc";
 import { captureUtmParameters, type UTMParameters, withUtmParameters } from "@/lib/utm";
-import { CheckCircle2, Download, Loader2, Send } from "lucide-react";
+import { CheckCircle2, Download, Gift, Loader2, Send, Sparkles } from "lucide-react";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 
@@ -33,23 +33,34 @@ export default function PsicanaliseLeadForm() {
       </p>
 
       {createLead.isSuccess ? (
-        <div className="mt-5 rounded-xl border border-emerald-200 bg-emerald-50 p-4 text-sm text-emerald-900" role="status">
-          <CheckCircle2 className="mr-2 inline h-4 w-4" />
-          <p className="inline">Interesse registrado com sucesso. Em breve, nossa equipe falará com você.</p>
+        <div className="lead-success-panel mt-5 overflow-hidden rounded-2xl border border-emerald-200 bg-gradient-to-br from-emerald-50 via-white to-[#f8f0ff] p-4 text-emerald-950 shadow-sm" role="status">
+          <div className="flex items-start gap-3">
+            <span className="mt-0.5 inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-emerald-600 text-white shadow-sm">
+              <CheckCircle2 className="h-5 w-5" aria-hidden="true" />
+            </span>
+            <div>
+              <p className="font-display text-2xl font-semibold leading-none">Cadastro confirmado!</p>
+              <p className="mt-2 text-sm leading-relaxed text-emerald-950/75">Seu interesse foi registrado. Em breve, nossa equipe falará com você.</p>
+            </div>
+          </div>
           {createLead.data?.leadMagnet && (
-            <div className="mt-4 rounded-lg border border-emerald-200 bg-white p-4">
-              <p className="font-semibold text-emerald-950">Seu presente está pronto.</p>
-              <p className="mt-1 text-emerald-900/80">{createLead.data.leadMagnet.description}</p>
+            <div className="mt-4 rounded-xl border border-[#D4AF37]/35 bg-white/90 p-4 shadow-[0_10px_24px_rgba(61,0,112,0.08)]">
+              <div className="flex items-center gap-2 text-[#6b1fa8]">
+                <Gift className="h-5 w-5" aria-hidden="true" />
+                <p className="font-bold">Seu devocional está liberado</p>
+                <Sparkles className="ml-auto h-4 w-4 text-[#D4AF37]" aria-hidden="true" />
+              </div>
+              <p className="mt-2 text-sm leading-relaxed text-foreground/70">{createLead.data.leadMagnet.description}</p>
               <a
                 href={createLead.data.leadMagnet.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-3 inline-flex min-h-10 items-center gap-2 rounded-full bg-[#6b1fa8] px-4 py-2 font-bold text-white transition-transform duration-200 hover:-translate-y-0.5 active:scale-[0.97]"
+                className="lead-magnet-download mt-4 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-full bg-[#6b1fa8] px-4 py-3 text-center text-sm font-extrabold text-white shadow-lg transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#541583] hover:shadow-xl active:scale-[0.97]"
               >
-                <Download className="h-4 w-4" />
-                Baixar “{createLead.data.leadMagnet.title}”
+                <Download className="relative z-10 h-4 w-4 shrink-0" aria-hidden="true" />
+                <span className="relative z-10">Baixar “{createLead.data.leadMagnet.title}”</span>
               </a>
-              <p className="mt-3 text-xs text-emerald-900/70">Também enviamos o acesso para o seu e-mail.</p>
+              <p className="mt-3 text-center text-xs text-emerald-950/65">Também enviamos o acesso para o seu e-mail.</p>
             </div>
           )}
         </div>

@@ -199,4 +199,51 @@
     backdrop-filter: blur(12px);
     border: 1px solid rgba(107, 31, 168, 0.15);
   }
+
+  .lead-magnet-download {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .lead-magnet-download::before {
+    position: absolute;
+    inset: 0;
+    content: "";
+    background: linear-gradient(105deg, transparent 38%, rgba(255, 255, 255, 0.26) 50%, transparent 62%);
+    transform: translateX(-120%);
+    transition: transform 280ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .lead-magnet-download:hover::before {
+    transform: translateX(120%);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .lead-success-panel {
+      animation: lead-success-reveal 280ms cubic-bezier(0.23, 1, 0.32, 1) both;
+    }
+
+    .lead-magnet-download {
+      animation: lead-download-reveal 280ms 90ms cubic-bezier(0.23, 1, 0.32, 1) both;
+    }
+
+    .lead-magnet-download svg {
+      animation: lead-icon-pop 240ms 150ms cubic-bezier(0.23, 1, 0.32, 1) both;
+    }
+  }
+
+  @keyframes lead-success-reveal {
+    from { opacity: 0; transform: translateY(10px) scale(0.98); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+  }
+
+  @keyframes lead-download-reveal {
+    from { opacity: 0; transform: translateY(8px) scale(0.98); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+  }
+
+  @keyframes lead-icon-pop {
+    from { transform: translateY(-3px) scale(0.8); }
+    to { transform: translateY(0) scale(1); }
+  }
 }

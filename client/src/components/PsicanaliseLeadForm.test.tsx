@@ -73,9 +73,14 @@ describe("PsicanaliseLeadForm", () => {
 
     render(<PsicanaliseLeadForm />);
 
-    expect(screen.getByRole("link", { name: /baixar “5 dias para silenciar/i }).getAttribute("href")).toBe(
+    const downloadLink = screen.getByRole("link", { name: /baixar “5 dias para silenciar/i });
+
+    expect(screen.getByText("Cadastro confirmado!")).toBeTruthy();
+    expect(screen.getByText("Seu devocional está liberado")).toBeTruthy();
+    expect(downloadLink.getAttribute("href")).toBe(
       mutationState.data.leadMagnet.url
     );
+    expect(downloadLink.className).toContain("lead-magnet-download");
     expect(screen.getByText("Também enviamos o acesso para o seu e-mail.")).toBeTruthy();
   });
 });

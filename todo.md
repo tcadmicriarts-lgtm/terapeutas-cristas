@@ -198,3 +198,16 @@
 - [x] Validar o cadastro e o botão de download do PDF em um envio real pelo domínio Vercel.
 - [x] Confirmar o recebimento do alerta interno e do e-mail de boas-vindas do teste Vercel.
 - [x] Publicar e sincronizar a correção com o GitHub e confirmar o domínio público.
+
+# Experiência visual do brinde pós-cadastro
+
+- [x] Selecionar uma imagem real previamente fornecida para enriquecer a seção de captura.
+- [x] Inserir a imagem escolhida na seção do formulário com hierarquia visual responsiva.
+- [x] Criar uma mensagem de sucesso visualmente agradável antes do acesso ao brinde.
+- [x] Adicionar animação acessível ao botão de download do PDF liberado após o cadastro.
+- [x] Cobrir a nova confirmação e o botão com testes automatizados.
+- [ ] Validar em computador e celular, publicar e sincronizar a atualização.
+- [x] Validar a apresentação em computador e celular, além dos testes e da compilação.
+- [ ] Salvar o checkpoint dos aprimoramentos visuais do formulário.
+- [ ] Sincronizar os aprimoramentos visuais na branch `main` do GitHub.
+- [ ] Confirmar os aprimoramentos no domínio Vercel publicado.

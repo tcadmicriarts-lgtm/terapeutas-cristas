@@ -10,4 +10,5 @@ export function getProjectAssetUrl(storagePath: string): string {
 
 export const projectAssets = {
   posGraduacao: getProjectAssetUrl("/manus-storage/pos-graduacao-antiga_240a46cc.png"),
+  devocional5DiasCover: getProjectAssetUrl("/manus-storage/devocional-5-dias-capa-01_670c84ba.png"),
 } as const;

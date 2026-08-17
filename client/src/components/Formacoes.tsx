@@ -153,6 +153,18 @@ export default function Formacoes() {
               <p className="mt-2 text-sm leading-relaxed text-foreground/60">
                 Uma nova formação está a caminho. Cadastre-se para receber as informações de abertura, conteúdos e condições de inscrição.
               </p>
+              <figure className="mt-6 flex max-w-md items-center gap-4 rounded-2xl border border-[#D4AF37]/30 bg-white/80 p-3 shadow-sm">
+                <img
+                  src={projectAssets.devocional5DiasCover}
+                  alt="Capa do devocional 5 Dias para Silenciar a Ansiedade e Ouvir a Voz de Deus"
+                  className="h-24 w-[4.25rem] rounded-lg object-cover object-top shadow-md sm:h-28 sm:w-20"
+                />
+                <figcaption>
+                  <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-brand-teal">Presente de boas-vindas</p>
+                  <p className="mt-1 font-display text-xl font-semibold leading-tight text-foreground">Receba o devocional gratuito “5 Dias”.</p>
+                  <p className="mt-1 text-xs leading-relaxed text-foreground/60">O acesso aparece logo após o seu cadastro.</p>
+                </figcaption>
+              </figure>
               <a
                 href={WHATSAPP_URL}
                 target="_blank"
