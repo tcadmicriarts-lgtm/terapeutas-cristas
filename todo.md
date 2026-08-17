@@ -208,6 +208,6 @@
 - [x] Cobrir a nova confirmação e o botão com testes automatizados.
 - [ ] Validar em computador e celular, publicar e sincronizar a atualização.
 - [x] Validar a apresentação em computador e celular, além dos testes e da compilação.
-- [ ] Salvar o checkpoint dos aprimoramentos visuais do formulário.
+- [x] Salvar o checkpoint dos aprimoramentos visuais do formulário.
 - [ ] Sincronizar os aprimoramentos visuais na branch `main` do GitHub.
 - [ ] Confirmar os aprimoramentos no domínio Vercel publicado.
